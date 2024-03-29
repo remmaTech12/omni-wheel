@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>/home/remma/lab/omni-wheel/circuit/remote_controller/remote_controller.kicad_sch</source>
-    <date>2024年03月29日 13時27分12秒</date>
+    <date>2024年03月29日 20時21分22秒</date>
     <tool>Eeschema 6.0.2+dfsg-1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -28,11 +28,10 @@
       <value>10u</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <fields>
-        <field name="Purchase link">https://www.mouser.jp/ProductDetail/KYOCERA-AVX/0603YD106MAT2A?qs=sGAEpiMZZMukHu%252BjC5l7Yb5oPaw27JT5wYXOBzrtF%252B0%3D</field>
         <field name="Vendor">https://www.mouser.jp/ProductDetail/KYOCERA-AVX/0603YD106MAT2A?qs=sGAEpiMZZMukHu%252BjC5l7Yb5oPaw27JT5wYXOBzrtF%252B0%3D</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Purchase link" value="https://www.mouser.jp/ProductDetail/KYOCERA-AVX/0603YD106MAT2A?qs=sGAEpiMZZMukHu%252BjC5l7Yb5oPaw27JT5wYXOBzrtF%252B0%3D"/>
+      <property name="Purchase link" value=""/>
       <property name="Vendor" value="https://www.mouser.jp/ProductDetail/KYOCERA-AVX/0603YD106MAT2A?qs=sGAEpiMZZMukHu%252BjC5l7Yb5oPaw27JT5wYXOBzrtF%252B0%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
@@ -43,11 +42,10 @@
       <value>0.1u</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <fields>
-        <field name="Purchase link">https://www.mouser.jp/ProductDetail/KEMET/C0603C104K1RACTU?qs=sGAEpiMZZMukHu%252BjC5l7Yb4eEbXPfWIFKcQ8bqfDBo8%3D</field>
         <field name="Vendor">https://www.mouser.jp/ProductDetail/KEMET/C0603C104K1RACTU?qs=sGAEpiMZZMukHu%252BjC5l7Yb4eEbXPfWIFKcQ8bqfDBo8%3D</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Purchase link" value="https://www.mouser.jp/ProductDetail/KEMET/C0603C104K1RACTU?qs=sGAEpiMZZMukHu%252BjC5l7Yb4eEbXPfWIFKcQ8bqfDBo8%3D"/>
+      <property name="Purchase link" value=""/>
       <property name="Vendor" value="https://www.mouser.jp/ProductDetail/KEMET/C0603C104K1RACTU?qs=sGAEpiMZZMukHu%252BjC5l7Yb4eEbXPfWIFKcQ8bqfDBo8%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
@@ -58,11 +56,10 @@
       <value>22u</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <fields>
-        <field name="Purchase link">https://www.mouser.jp/ProductDetail/KYOCERA-AVX/KAF15BR71E224KT?qs=sGAEpiMZZMukHu%252BjC5l7YcmRMYNDachgfLmvWm%252B%2F5Cg%3D</field>
         <field name="Vendor">https://www.mouser.jp/ProductDetail/KYOCERA-AVX/KAF15BR71E224KT?qs=sGAEpiMZZMukHu%252BjC5l7YcmRMYNDachgfLmvWm%252B%2F5Cg%3D</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Purchase link" value="https://www.mouser.jp/ProductDetail/KYOCERA-AVX/KAF15BR71E224KT?qs=sGAEpiMZZMukHu%252BjC5l7YcmRMYNDachgfLmvWm%252B%2F5Cg%3D"/>
+      <property name="Purchase link" value=""/>
       <property name="Vendor" value="https://www.mouser.jp/ProductDetail/KYOCERA-AVX/KAF15BR71E224KT?qs=sGAEpiMZZMukHu%252BjC5l7YcmRMYNDachgfLmvWm%252B%2F5Cg%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
@@ -73,11 +70,10 @@
       <value>10u</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <fields>
-        <field name="Purchase link">https://www.mouser.jp/ProductDetail/KYOCERA-AVX/0603YD106MAT2A?qs=sGAEpiMZZMukHu%252BjC5l7Yb5oPaw27JT5wYXOBzrtF%252B0%3D</field>
         <field name="Vendor">https://www.mouser.jp/ProductDetail/KYOCERA-AVX/0603YD106MAT2A?qs=sGAEpiMZZMukHu%252BjC5l7Yb5oPaw27JT5wYXOBzrtF%252B0%3D</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Purchase link" value="https://www.mouser.jp/ProductDetail/KYOCERA-AVX/0603YD106MAT2A?qs=sGAEpiMZZMukHu%252BjC5l7Yb5oPaw27JT5wYXOBzrtF%252B0%3D"/>
+      <property name="Purchase link" value=""/>
       <property name="Vendor" value="https://www.mouser.jp/ProductDetail/KYOCERA-AVX/0603YD106MAT2A?qs=sGAEpiMZZMukHu%252BjC5l7Yb5oPaw27JT5wYXOBzrtF%252B0%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
@@ -88,11 +84,10 @@
       <value>0.1u</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <fields>
-        <field name="Purchase link">https://www.mouser.jp/ProductDetail/KEMET/C0603C104K1RACTU?qs=sGAEpiMZZMukHu%252BjC5l7Yb4eEbXPfWIFKcQ8bqfDBo8%3D</field>
         <field name="Vendor">https://www.mouser.jp/ProductDetail/KEMET/C0603C104K1RACTU?qs=sGAEpiMZZMukHu%252BjC5l7Yb4eEbXPfWIFKcQ8bqfDBo8%3D</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Purchase link" value="https://www.mouser.jp/ProductDetail/KEMET/C0603C104K1RACTU?qs=sGAEpiMZZMukHu%252BjC5l7Yb4eEbXPfWIFKcQ8bqfDBo8%3D"/>
+      <property name="Purchase link" value=""/>
       <property name="Vendor" value="https://www.mouser.jp/ProductDetail/KEMET/C0603C104K1RACTU?qs=sGAEpiMZZMukHu%252BjC5l7Yb4eEbXPfWIFKcQ8bqfDBo8%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
@@ -103,11 +98,10 @@
       <value>0.1u</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <fields>
-        <field name="Purchase link">https://www.mouser.jp/ProductDetail/KEMET/C0603C104K1RACTU?qs=sGAEpiMZZMukHu%252BjC5l7Yb4eEbXPfWIFKcQ8bqfDBo8%3D</field>
         <field name="Vendor">https://www.mouser.jp/ProductDetail/KEMET/C0603C104K1RACTU?qs=sGAEpiMZZMukHu%252BjC5l7Yb4eEbXPfWIFKcQ8bqfDBo8%3D</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Purchase link" value="https://www.mouser.jp/ProductDetail/KEMET/C0603C104K1RACTU?qs=sGAEpiMZZMukHu%252BjC5l7Yb4eEbXPfWIFKcQ8bqfDBo8%3D"/>
+      <property name="Purchase link" value=""/>
       <property name="Vendor" value="https://www.mouser.jp/ProductDetail/KEMET/C0603C104K1RACTU?qs=sGAEpiMZZMukHu%252BjC5l7Yb4eEbXPfWIFKcQ8bqfDBo8%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
@@ -118,11 +112,10 @@
       <value>4.7u</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <fields>
-        <field name="Purchase link">https://www.mouser.jp/ProductDetail/KEMET/C0603C475K8PACTU?qs=sGAEpiMZZMukHu%252BjC5l7YS3hfMWWNXqPBkmFqa7VQO4%3D</field>
         <field name="Vendor">https://www.mouser.jp/ProductDetail/KEMET/C0603C475K8PACTU?qs=sGAEpiMZZMukHu%252BjC5l7YS3hfMWWNXqPBkmFqa7VQO4%3D</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Purchase link" value="https://www.mouser.jp/ProductDetail/KEMET/C0603C475K8PACTU?qs=sGAEpiMZZMukHu%252BjC5l7YS3hfMWWNXqPBkmFqa7VQO4%3D"/>
+      <property name="Purchase link" value=""/>
       <property name="Vendor" value="https://www.mouser.jp/ProductDetail/KEMET/C0603C475K8PACTU?qs=sGAEpiMZZMukHu%252BjC5l7YS3hfMWWNXqPBkmFqa7VQO4%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
@@ -133,11 +126,10 @@
       <value>0.1u</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <fields>
-        <field name="Purchase link">https://www.mouser.jp/ProductDetail/KEMET/C0603C104K1RACTU?qs=sGAEpiMZZMukHu%252BjC5l7Yb4eEbXPfWIFKcQ8bqfDBo8%3D</field>
         <field name="Vendor">https://www.mouser.jp/ProductDetail/KEMET/C0603C104K1RACTU?qs=sGAEpiMZZMukHu%252BjC5l7Yb4eEbXPfWIFKcQ8bqfDBo8%3D</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Purchase link" value="https://www.mouser.jp/ProductDetail/KEMET/C0603C104K1RACTU?qs=sGAEpiMZZMukHu%252BjC5l7Yb4eEbXPfWIFKcQ8bqfDBo8%3D"/>
+      <property name="Purchase link" value=""/>
       <property name="Vendor" value="https://www.mouser.jp/ProductDetail/KEMET/C0603C104K1RACTU?qs=sGAEpiMZZMukHu%252BjC5l7Yb4eEbXPfWIFKcQ8bqfDBo8%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
@@ -148,11 +140,10 @@
       <value>LED</value>
       <footprint>Diode_SMD:D_0603_1608Metric</footprint>
       <fields>
-        <field name="Purchase link">https://www.mouser.jp/ProductDetail/Bivar/SM0603UBWC?qs=hWDdE2Pc5RAVU9aZAE1txQ%3D%3D</field>
         <field name="Vendor">https://www.mouser.jp/ProductDetail/Bivar/SM0603UBWC?qs=hWDdE2Pc5RAVU9aZAE1txQ%3D%3D</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
-      <property name="Purchase link" value="https://www.mouser.jp/ProductDetail/Bivar/SM0603UBWC?qs=hWDdE2Pc5RAVU9aZAE1txQ%3D%3D"/>
+      <property name="Purchase link" value=""/>
       <property name="Vendor" value="https://www.mouser.jp/ProductDetail/Bivar/SM0603UBWC?qs=hWDdE2Pc5RAVU9aZAE1txQ%3D%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
@@ -164,11 +155,10 @@
       <footprint>Package_TO_SOT_SMD:SOT-143</footprint>
       <datasheet>http://www.littelfuse.com/~/media/files/littelfuse/technical%20resources/documents/data%20sheets/sp05xxba.pdf</datasheet>
       <fields>
-        <field name="Purchase link">https://www.mouser.jp/ProductDetail/Littelfuse/SP0503BAHTG?qs=uD%2FdkN7XIa0NTYXwHdELYA%3D%3D</field>
         <field name="Vendor">https://www.mouser.jp/ProductDetail/Littelfuse/SP0503BAHTG?qs=uD%2FdkN7XIa0NTYXwHdELYA%3D%3D</field>
       </fields>
       <libsource lib="Power_Protection" part="SP0503BAHT" description="TVS Diode Array, 5.5V Standoff, 3 Channels, SOT-143 package"/>
-      <property name="Purchase link" value="https://www.mouser.jp/ProductDetail/Littelfuse/SP0503BAHTG?qs=uD%2FdkN7XIa0NTYXwHdELYA%3D%3D"/>
+      <property name="Purchase link" value=""/>
       <property name="Vendor" value="https://www.mouser.jp/ProductDetail/Littelfuse/SP0503BAHTG?qs=uD%2FdkN7XIa0NTYXwHdELYA%3D%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
@@ -179,11 +169,10 @@
       <value>LED</value>
       <footprint>Diode_SMD:D_0603_1608Metric</footprint>
       <fields>
-        <field name="Purchase link">https://www.mouser.jp/ProductDetail/Bivar/SM0603UBWC?qs=hWDdE2Pc5RAVU9aZAE1txQ%3D%3D</field>
         <field name="Vendor">https://www.mouser.jp/ProductDetail/Bivar/SM0603UBWC?qs=hWDdE2Pc5RAVU9aZAE1txQ%3D%3D</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
-      <property name="Purchase link" value="https://www.mouser.jp/ProductDetail/Bivar/SM0603UBWC?qs=hWDdE2Pc5RAVU9aZAE1txQ%3D%3D"/>
+      <property name="Purchase link" value=""/>
       <property name="Vendor" value="https://www.mouser.jp/ProductDetail/Bivar/SM0603UBWC?qs=hWDdE2Pc5RAVU9aZAE1txQ%3D%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
@@ -194,11 +183,10 @@
       <value>LED</value>
       <footprint>Diode_SMD:D_0603_1608Metric</footprint>
       <fields>
-        <field name="Purchase link">https://www.mouser.jp/ProductDetail/Bivar/SM0603UBWC?qs=hWDdE2Pc5RAVU9aZAE1txQ%3D%3D</field>
         <field name="Vendor">https://www.mouser.jp/ProductDetail/Bivar/SM0603UBWC?qs=hWDdE2Pc5RAVU9aZAE1txQ%3D%3D</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
-      <property name="Purchase link" value="https://www.mouser.jp/ProductDetail/Bivar/SM0603UBWC?qs=hWDdE2Pc5RAVU9aZAE1txQ%3D%3D"/>
+      <property name="Purchase link" value=""/>
       <property name="Vendor" value="https://www.mouser.jp/ProductDetail/Bivar/SM0603UBWC?qs=hWDdE2Pc5RAVU9aZAE1txQ%3D%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
@@ -209,11 +197,10 @@
       <value>D_Schottky</value>
       <footprint>Diode_SMD:D_0603_1608Metric</footprint>
       <fields>
-        <field name="Purchase link">https://www.mouser.jp/ProductDetail/Bourns/CD0603-B0340R?qs=xhbEVWpZdWee9K23%252B3DSjQ%3D%3D</field>
         <field name="Vendor">https://www.mouser.jp/ProductDetail/Bourns/CD0603-B0340R?qs=xhbEVWpZdWee9K23%252B3DSjQ%3D%3D</field>
       </fields>
       <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
-      <property name="Purchase link" value="https://www.mouser.jp/ProductDetail/Bourns/CD0603-B0340R?qs=xhbEVWpZdWee9K23%252B3DSjQ%3D%3D"/>
+      <property name="Purchase link" value=""/>
       <property name="Vendor" value="https://www.mouser.jp/ProductDetail/Bourns/CD0603-B0340R?qs=xhbEVWpZdWee9K23%252B3DSjQ%3D%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
@@ -224,11 +211,10 @@
       <value>LED</value>
       <footprint>Diode_SMD:D_0603_1608Metric</footprint>
       <fields>
-        <field name="Purchase link">https://www.mouser.jp/ProductDetail/Bivar/SM0603UBWC?qs=hWDdE2Pc5RAVU9aZAE1txQ%3D%3D</field>
         <field name="Vendor">https://www.mouser.jp/ProductDetail/Bivar/SM0603UBWC?qs=hWDdE2Pc5RAVU9aZAE1txQ%3D%3D</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
-      <property name="Purchase link" value="https://www.mouser.jp/ProductDetail/Bivar/SM0603UBWC?qs=hWDdE2Pc5RAVU9aZAE1txQ%3D%3D"/>
+      <property name="Purchase link" value=""/>
       <property name="Vendor" value="https://www.mouser.jp/ProductDetail/Bivar/SM0603UBWC?qs=hWDdE2Pc5RAVU9aZAE1txQ%3D%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
@@ -239,11 +225,10 @@
       <value>LED</value>
       <footprint>Diode_SMD:D_0603_1608Metric</footprint>
       <fields>
-        <field name="Purchase link">https://www.mouser.jp/ProductDetail/Bivar/SM0603UBWC?qs=hWDdE2Pc5RAVU9aZAE1txQ%3D%3D</field>
         <field name="Vendor">https://www.mouser.jp/ProductDetail/Bivar/SM0603UBWC?qs=hWDdE2Pc5RAVU9aZAE1txQ%3D%3D</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
-      <property name="Purchase link" value="https://www.mouser.jp/ProductDetail/Bivar/SM0603UBWC?qs=hWDdE2Pc5RAVU9aZAE1txQ%3D%3D"/>
+      <property name="Purchase link" value=""/>
       <property name="Vendor" value="https://www.mouser.jp/ProductDetail/Bivar/SM0603UBWC?qs=hWDdE2Pc5RAVU9aZAE1txQ%3D%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
@@ -254,11 +239,10 @@
       <value>LED</value>
       <footprint>Diode_SMD:D_0603_1608Metric</footprint>
       <fields>
-        <field name="Purchase link">https://www.mouser.jp/ProductDetail/Bivar/SM0603UBWC?qs=hWDdE2Pc5RAVU9aZAE1txQ%3D%3D</field>
         <field name="Vendor">https://www.mouser.jp/ProductDetail/Bivar/SM0603UBWC?qs=hWDdE2Pc5RAVU9aZAE1txQ%3D%3D</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
-      <property name="Purchase link" value="https://www.mouser.jp/ProductDetail/Bivar/SM0603UBWC?qs=hWDdE2Pc5RAVU9aZAE1txQ%3D%3D"/>
+      <property name="Purchase link" value=""/>
       <property name="Vendor" value="https://www.mouser.jp/ProductDetail/Bivar/SM0603UBWC?qs=hWDdE2Pc5RAVU9aZAE1txQ%3D%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
@@ -269,11 +253,10 @@
       <value>LED</value>
       <footprint>Diode_SMD:D_0603_1608Metric</footprint>
       <fields>
-        <field name="Purchase link">https://www.mouser.jp/ProductDetail/Bivar/SM0603UBWC?qs=hWDdE2Pc5RAVU9aZAE1txQ%3D%3D</field>
         <field name="Vendor">https://www.mouser.jp/ProductDetail/Bivar/SM0603UBWC?qs=hWDdE2Pc5RAVU9aZAE1txQ%3D%3D</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
-      <property name="Purchase link" value="https://www.mouser.jp/ProductDetail/Bivar/SM0603UBWC?qs=hWDdE2Pc5RAVU9aZAE1txQ%3D%3D"/>
+      <property name="Purchase link" value=""/>
       <property name="Vendor" value="https://www.mouser.jp/ProductDetail/Bivar/SM0603UBWC?qs=hWDdE2Pc5RAVU9aZAE1txQ%3D%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
@@ -284,11 +267,10 @@
       <value>LED</value>
       <footprint>Diode_SMD:D_0603_1608Metric</footprint>
       <fields>
-        <field name="Purchase link">https://www.mouser.jp/ProductDetail/Bivar/SM0603UBWC?qs=hWDdE2Pc5RAVU9aZAE1txQ%3D%3D</field>
         <field name="Vendor">https://www.mouser.jp/ProductDetail/Bivar/SM0603UBWC?qs=hWDdE2Pc5RAVU9aZAE1txQ%3D%3D</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
-      <property name="Purchase link" value="https://www.mouser.jp/ProductDetail/Bivar/SM0603UBWC?qs=hWDdE2Pc5RAVU9aZAE1txQ%3D%3D"/>
+      <property name="Purchase link" value=""/>
       <property name="Vendor" value="https://www.mouser.jp/ProductDetail/Bivar/SM0603UBWC?qs=hWDdE2Pc5RAVU9aZAE1txQ%3D%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
@@ -299,11 +281,10 @@
       <value>LED</value>
       <footprint>Diode_SMD:D_0603_1608Metric</footprint>
       <fields>
-        <field name="Purchase link">https://www.mouser.jp/ProductDetail/Bivar/SM0603UBWC?qs=hWDdE2Pc5RAVU9aZAE1txQ%3D%3D</field>
         <field name="Vendor">https://www.mouser.jp/ProductDetail/Bivar/SM0603UBWC?qs=hWDdE2Pc5RAVU9aZAE1txQ%3D%3D</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
-      <property name="Purchase link" value="https://www.mouser.jp/ProductDetail/Bivar/SM0603UBWC?qs=hWDdE2Pc5RAVU9aZAE1txQ%3D%3D"/>
+      <property name="Purchase link" value=""/>
       <property name="Vendor" value="https://www.mouser.jp/ProductDetail/Bivar/SM0603UBWC?qs=hWDdE2Pc5RAVU9aZAE1txQ%3D%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
@@ -314,11 +295,10 @@
       <value>LED</value>
       <footprint>Diode_SMD:D_0603_1608Metric</footprint>
       <fields>
-        <field name="Purchase link">https://www.mouser.jp/ProductDetail/Bivar/SM0603UBWC?qs=hWDdE2Pc5RAVU9aZAE1txQ%3D%3D</field>
         <field name="Vendor">https://www.mouser.jp/ProductDetail/Bivar/SM0603UBWC?qs=hWDdE2Pc5RAVU9aZAE1txQ%3D%3D</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
-      <property name="Purchase link" value="https://www.mouser.jp/ProductDetail/Bivar/SM0603UBWC?qs=hWDdE2Pc5RAVU9aZAE1txQ%3D%3D"/>
+      <property name="Purchase link" value=""/>
       <property name="Vendor" value="https://www.mouser.jp/ProductDetail/Bivar/SM0603UBWC?qs=hWDdE2Pc5RAVU9aZAE1txQ%3D%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
@@ -329,11 +309,10 @@
       <value>LED</value>
       <footprint>Diode_SMD:D_0603_1608Metric</footprint>
       <fields>
-        <field name="Purchase link">https://www.mouser.jp/ProductDetail/Bivar/SM0603UBWC?qs=hWDdE2Pc5RAVU9aZAE1txQ%3D%3D</field>
         <field name="Vendor">https://www.mouser.jp/ProductDetail/Bivar/SM0603UBWC?qs=hWDdE2Pc5RAVU9aZAE1txQ%3D%3D</field>
       </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
-      <property name="Purchase link" value="https://www.mouser.jp/ProductDetail/Bivar/SM0603UBWC?qs=hWDdE2Pc5RAVU9aZAE1txQ%3D%3D"/>
+      <property name="Purchase link" value=""/>
       <property name="Vendor" value="https://www.mouser.jp/ProductDetail/Bivar/SM0603UBWC?qs=hWDdE2Pc5RAVU9aZAE1txQ%3D%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
@@ -354,11 +333,10 @@
       <footprint>Connector_USB:USB_C_Receptacle_Amphenol_12401610E4-2A</footprint>
       <datasheet>https://www.usb.org/sites/default/files/documents/usb_type-c.zip</datasheet>
       <fields>
-        <field name="Purchase link">https://www.mouser.jp/ProductDetail/Amphenol-Commercial-Products/12401610E42A?qs=EgDjlb95zqAWvChv41w5lg%3D%3D</field>
         <field name="Vendor">https://www.mouser.jp/ProductDetail/Amphenol-Commercial-Products/12401610E42A?qs=EgDjlb95zqAWvChv41w5lg%3D%3D</field>
       </fields>
       <libsource lib="Connector" part="USB_C_Receptacle_USB2.0" description="USB 2.0-only Type-C Receptacle connector"/>
-      <property name="Purchase link" value="https://www.mouser.jp/ProductDetail/Amphenol-Commercial-Products/12401610E42A?qs=EgDjlb95zqAWvChv41w5lg%3D%3D"/>
+      <property name="Purchase link" value=""/>
       <property name="Vendor" value="https://www.mouser.jp/ProductDetail/Amphenol-Commercial-Products/12401610E42A?qs=EgDjlb95zqAWvChv41w5lg%3D%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
@@ -370,11 +348,10 @@
       <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
       <datasheet>http://www.unisonic.com.tw/datasheet/S8050.pdf</datasheet>
       <fields>
-        <field name="Purchase link">https://www.mouser.jp/ProductDetail/Comchip-Technology/SS8050-G?qs=sGAEpiMZZMvplms98TlKY0DRKkFioIw6yshKylp0VqvgzoQ7StxaEg%3D%3D</field>
         <field name="Vendor">https://www.mouser.jp/ProductDetail/Comchip-Technology/SS8050-G?qs=sGAEpiMZZMvplms98TlKY0DRKkFioIw6yshKylp0VqvgzoQ7StxaEg%3D%3D</field>
       </fields>
       <libsource lib="Transistor_BJT" part="S8050" description="0.7A Ic, 20V Vce, Low Voltage High Current NPN Transistor, TO-92"/>
-      <property name="Purchase link" value="https://www.mouser.jp/ProductDetail/Comchip-Technology/SS8050-G?qs=sGAEpiMZZMvplms98TlKY0DRKkFioIw6yshKylp0VqvgzoQ7StxaEg%3D%3D"/>
+      <property name="Purchase link" value=""/>
       <property name="Vendor" value="https://www.mouser.jp/ProductDetail/Comchip-Technology/SS8050-G?qs=sGAEpiMZZMvplms98TlKY0DRKkFioIw6yshKylp0VqvgzoQ7StxaEg%3D%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
@@ -386,11 +363,10 @@
       <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
       <datasheet>http://www.unisonic.com.tw/datasheet/S8050.pdf</datasheet>
       <fields>
-        <field name="Purchase link">https://www.mouser.jp/ProductDetail/Comchip-Technology/SS8050-G?qs=sGAEpiMZZMvplms98TlKY0DRKkFioIw6yshKylp0VqvgzoQ7StxaEg%3D%3D</field>
         <field name="Vendor">https://www.mouser.jp/ProductDetail/Comchip-Technology/SS8050-G?qs=sGAEpiMZZMvplms98TlKY0DRKkFioIw6yshKylp0VqvgzoQ7StxaEg%3D%3D</field>
       </fields>
       <libsource lib="Transistor_BJT" part="S8050" description="0.7A Ic, 20V Vce, Low Voltage High Current NPN Transistor, TO-92"/>
-      <property name="Purchase link" value="https://www.mouser.jp/ProductDetail/Comchip-Technology/SS8050-G?qs=sGAEpiMZZMvplms98TlKY0DRKkFioIw6yshKylp0VqvgzoQ7StxaEg%3D%3D"/>
+      <property name="Purchase link" value=""/>
       <property name="Vendor" value="https://www.mouser.jp/ProductDetail/Comchip-Technology/SS8050-G?qs=sGAEpiMZZMvplms98TlKY0DRKkFioIw6yshKylp0VqvgzoQ7StxaEg%3D%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
@@ -401,11 +377,10 @@
       <value>10k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="Purchase link">https://www.mouser.jp/ProductDetail/Vishay-Beyschlag/MCT0603MG1002BP500?qs=Y0Uzf4wQF3kTztUxcSxY1w%3D%3D</field>
         <field name="Vendor">https://www.mouser.jp/ProductDetail/Vishay-Beyschlag/MCT0603MG1002BP500?qs=Y0Uzf4wQF3kTztUxcSxY1w%3D%3D</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Purchase link" value="https://www.mouser.jp/ProductDetail/Vishay-Beyschlag/MCT0603MG1002BP500?qs=Y0Uzf4wQF3kTztUxcSxY1w%3D%3D"/>
+      <property name="Purchase link" value=""/>
       <property name="Vendor" value="https://www.mouser.jp/ProductDetail/Vishay-Beyschlag/MCT0603MG1002BP500?qs=Y0Uzf4wQF3kTztUxcSxY1w%3D%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
@@ -416,11 +391,10 @@
       <value>10k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="Purchase link">https://www.mouser.jp/ProductDetail/Vishay-Beyschlag/MCT0603MG1002BP500?qs=Y0Uzf4wQF3kTztUxcSxY1w%3D%3D</field>
         <field name="Vendor">https://www.mouser.jp/ProductDetail/Vishay-Beyschlag/MCT0603MG1002BP500?qs=Y0Uzf4wQF3kTztUxcSxY1w%3D%3D</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Purchase link" value="https://www.mouser.jp/ProductDetail/Vishay-Beyschlag/MCT0603MG1002BP500?qs=Y0Uzf4wQF3kTztUxcSxY1w%3D%3D"/>
+      <property name="Purchase link" value=""/>
       <property name="Vendor" value="https://www.mouser.jp/ProductDetail/Vishay-Beyschlag/MCT0603MG1002BP500?qs=Y0Uzf4wQF3kTztUxcSxY1w%3D%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
@@ -431,11 +405,10 @@
       <value>147</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="Purchase link">https://www.mouser.jp/ProductDetail/Vishay-Beyschlag/MCT06030C1470FP500?qs=sGAEpiMZZMtlubZbdhIBIFnTCG%2F%2F8GT0o5xRkqdGvDo%3D</field>
         <field name="Vendor">https://www.mouser.jp/ProductDetail/Vishay-Beyschlag/MCT06030C1470FP500?qs=sGAEpiMZZMtlubZbdhIBIFnTCG%2F%2F8GT0o5xRkqdGvDo%3D</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Purchase link" value="https://www.mouser.jp/ProductDetail/Vishay-Beyschlag/MCT06030C1470FP500?qs=sGAEpiMZZMtlubZbdhIBIFnTCG%2F%2F8GT0o5xRkqdGvDo%3D"/>
+      <property name="Purchase link" value=""/>
       <property name="Vendor" value="https://www.mouser.jp/ProductDetail/Vishay-Beyschlag/MCT06030C1470FP500?qs=sGAEpiMZZMtlubZbdhIBIFnTCG%2F%2F8GT0o5xRkqdGvDo%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
@@ -446,11 +419,10 @@
       <value>10k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="Purchase link">https://www.mouser.jp/ProductDetail/Vishay-Beyschlag/MCT0603MG1002BP500?qs=Y0Uzf4wQF3kTztUxcSxY1w%3D%3D</field>
         <field name="Vendor">https://www.mouser.jp/ProductDetail/Vishay-Beyschlag/MCT0603MG1002BP500?qs=Y0Uzf4wQF3kTztUxcSxY1w%3D%3D</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Purchase link" value="https://www.mouser.jp/ProductDetail/Vishay-Beyschlag/MCT0603MG1002BP500?qs=Y0Uzf4wQF3kTztUxcSxY1w%3D%3D"/>
+      <property name="Purchase link" value=""/>
       <property name="Vendor" value="https://www.mouser.jp/ProductDetail/Vishay-Beyschlag/MCT0603MG1002BP500?qs=Y0Uzf4wQF3kTztUxcSxY1w%3D%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
@@ -461,11 +433,10 @@
       <value>22.1k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="Purchase link">https://www.mouser.jp/ProductDetail/YAGEO/RT0603BRB0722K1L?qs=sGAEpiMZZMtlubZbdhIBIFwAPm1rE69%252BVpUp6WtgZWs%3D</field>
         <field name="Vendor">https://www.mouser.jp/ProductDetail/YAGEO/RT0603BRB0722K1L?qs=sGAEpiMZZMtlubZbdhIBIFwAPm1rE69%252BVpUp6WtgZWs%3D</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Purchase link" value="https://www.mouser.jp/ProductDetail/YAGEO/RT0603BRB0722K1L?qs=sGAEpiMZZMtlubZbdhIBIFwAPm1rE69%252BVpUp6WtgZWs%3D"/>
+      <property name="Purchase link" value=""/>
       <property name="Vendor" value="https://www.mouser.jp/ProductDetail/YAGEO/RT0603BRB0722K1L?qs=sGAEpiMZZMtlubZbdhIBIFwAPm1rE69%252BVpUp6WtgZWs%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
@@ -476,11 +447,10 @@
       <value>5.1k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="Purchase link">https://www.mouser.jp/ProductDetail/Vishay-Dale/RCS06035K10FKEA?qs=sGAEpiMZZMtlubZbdhIBIE5LhqqS5SwHtki3GxnhvnY%3D</field>
         <field name="Vendor">https://www.mouser.jp/ProductDetail/Vishay-Dale/RCS06035K10FKEA?qs=sGAEpiMZZMtlubZbdhIBIE5LhqqS5SwHtki3GxnhvnY%3D</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Purchase link" value="https://www.mouser.jp/ProductDetail/Vishay-Dale/RCS06035K10FKEA?qs=sGAEpiMZZMtlubZbdhIBIE5LhqqS5SwHtki3GxnhvnY%3D"/>
+      <property name="Purchase link" value=""/>
       <property name="Vendor" value="https://www.mouser.jp/ProductDetail/Vishay-Dale/RCS06035K10FKEA?qs=sGAEpiMZZMtlubZbdhIBIE5LhqqS5SwHtki3GxnhvnY%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
@@ -491,11 +461,10 @@
       <value>100</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="Purchase link">https://www.mouser.jp/ProductDetail/Littelfuse/0603L001-60YR?qs=vmHwEFxEFR%252Bqpk0gfi6KUQ%3D%3D</field>
         <field name="Vendor">https://www.mouser.jp/ProductDetail/Littelfuse/0603L001-60YR?qs=vmHwEFxEFR%252Bqpk0gfi6KUQ%3D%3D</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Purchase link" value="https://www.mouser.jp/ProductDetail/Littelfuse/0603L001-60YR?qs=vmHwEFxEFR%252Bqpk0gfi6KUQ%3D%3D"/>
+      <property name="Purchase link" value=""/>
       <property name="Vendor" value="https://www.mouser.jp/ProductDetail/Littelfuse/0603L001-60YR?qs=vmHwEFxEFR%252Bqpk0gfi6KUQ%3D%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
@@ -506,11 +475,10 @@
       <value>100</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="Purchase link">https://www.mouser.jp/ProductDetail/Littelfuse/0603L001-60YR?qs=vmHwEFxEFR%252Bqpk0gfi6KUQ%3D%3D</field>
         <field name="Vendor">https://www.mouser.jp/ProductDetail/Littelfuse/0603L001-60YR?qs=vmHwEFxEFR%252Bqpk0gfi6KUQ%3D%3D</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Purchase link" value="https://www.mouser.jp/ProductDetail/Littelfuse/0603L001-60YR?qs=vmHwEFxEFR%252Bqpk0gfi6KUQ%3D%3D"/>
+      <property name="Purchase link" value=""/>
       <property name="Vendor" value="https://www.mouser.jp/ProductDetail/Littelfuse/0603L001-60YR?qs=vmHwEFxEFR%252Bqpk0gfi6KUQ%3D%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
@@ -521,11 +489,10 @@
       <value>47.5k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="Purchase link">https://www.mouser.jp/ProductDetail/Vishay-Dale/TNPW060347K5BEEA?qs=sGAEpiMZZMtlubZbdhIBIPU71Uf%252BtGsSjdE%252BnV%2FjH18%3D</field>
         <field name="Vendor">https://www.mouser.jp/ProductDetail/Vishay-Dale/TNPW060347K5BEEA?qs=sGAEpiMZZMtlubZbdhIBIPU71Uf%252BtGsSjdE%252BnV%2FjH18%3D</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Purchase link" value="https://www.mouser.jp/ProductDetail/Vishay-Dale/TNPW060347K5BEEA?qs=sGAEpiMZZMtlubZbdhIBIPU71Uf%252BtGsSjdE%252BnV%2FjH18%3D"/>
+      <property name="Purchase link" value=""/>
       <property name="Vendor" value="https://www.mouser.jp/ProductDetail/Vishay-Dale/TNPW060347K5BEEA?qs=sGAEpiMZZMtlubZbdhIBIPU71Uf%252BtGsSjdE%252BnV%2FjH18%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
@@ -536,11 +503,10 @@
       <value>5.1k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="Purchase link">https://www.mouser.jp/ProductDetail/Vishay-Dale/RCS06035K10FKEA?qs=sGAEpiMZZMtlubZbdhIBIE5LhqqS5SwHtki3GxnhvnY%3D</field>
         <field name="Vendor">https://www.mouser.jp/ProductDetail/Vishay-Dale/RCS06035K10FKEA?qs=sGAEpiMZZMtlubZbdhIBIE5LhqqS5SwHtki3GxnhvnY%3D</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Purchase link" value="https://www.mouser.jp/ProductDetail/Vishay-Dale/RCS06035K10FKEA?qs=sGAEpiMZZMtlubZbdhIBIE5LhqqS5SwHtki3GxnhvnY%3D"/>
+      <property name="Purchase link" value=""/>
       <property name="Vendor" value="https://www.mouser.jp/ProductDetail/Vishay-Dale/RCS06035K10FKEA?qs=sGAEpiMZZMtlubZbdhIBIE5LhqqS5SwHtki3GxnhvnY%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
@@ -551,11 +517,10 @@
       <value>2k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="Purchase link">https://www.mouser.jp/ProductDetail/Vishay-BC-Components/NTCS0603E3202GLT?qs=%2FWiulJ9oly6RDPZsx8Fw8g%3D%3D</field>
         <field name="Vendor">https://www.mouser.jp/ProductDetail/Vishay-BC-Components/NTCS0603E3202GLT?qs=%2FWiulJ9oly6RDPZsx8Fw8g%3D%3D</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Purchase link" value="https://www.mouser.jp/ProductDetail/Vishay-BC-Components/NTCS0603E3202GLT?qs=%2FWiulJ9oly6RDPZsx8Fw8g%3D%3D"/>
+      <property name="Purchase link" value=""/>
       <property name="Vendor" value="https://www.mouser.jp/ProductDetail/Vishay-BC-Components/NTCS0603E3202GLT?qs=%2FWiulJ9oly6RDPZsx8Fw8g%3D%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
@@ -566,11 +531,10 @@
       <value>10k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="Purchase link">https://www.mouser.jp/ProductDetail/Vishay-Beyschlag/MCT0603MG1002BP500?qs=Y0Uzf4wQF3kTztUxcSxY1w%3D%3D</field>
         <field name="Vendor">https://www.mouser.jp/ProductDetail/Vishay-Beyschlag/MCT0603MG1002BP500?qs=Y0Uzf4wQF3kTztUxcSxY1w%3D%3D</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Purchase link" value="https://www.mouser.jp/ProductDetail/Vishay-Beyschlag/MCT0603MG1002BP500?qs=Y0Uzf4wQF3kTztUxcSxY1w%3D%3D"/>
+      <property name="Purchase link" value=""/>
       <property name="Vendor" value="https://www.mouser.jp/ProductDetail/Vishay-Beyschlag/MCT0603MG1002BP500?qs=Y0Uzf4wQF3kTztUxcSxY1w%3D%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
@@ -581,11 +545,10 @@
       <value>0</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="Purchase link">https://www.mouser.jp/ProductDetail/Vishay-Beyschlag/MCT0603HZ0000ZP500?qs=sGAEpiMZZMukHu%252BjC5l7YS45V2nDEa%2Fh%252BgDnHJRSHR4%3D</field>
         <field name="Vendor">https://www.mouser.jp/ProductDetail/Vishay-Beyschlag/MCT0603HZ0000ZP500?qs=sGAEpiMZZMukHu%252BjC5l7YS45V2nDEa%2Fh%252BgDnHJRSHR4%3D</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Purchase link" value="https://www.mouser.jp/ProductDetail/Vishay-Beyschlag/MCT0603HZ0000ZP500?qs=sGAEpiMZZMukHu%252BjC5l7YS45V2nDEa%2Fh%252BgDnHJRSHR4%3D"/>
+      <property name="Purchase link" value=""/>
       <property name="Vendor" value="https://www.mouser.jp/ProductDetail/Vishay-Beyschlag/MCT0603HZ0000ZP500?qs=sGAEpiMZZMukHu%252BjC5l7YS45V2nDEa%2Fh%252BgDnHJRSHR4%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
@@ -596,11 +559,10 @@
       <value>0</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="Purchase link">https://www.mouser.jp/ProductDetail/Vishay-Beyschlag/MCT0603HZ0000ZP500?qs=sGAEpiMZZMukHu%252BjC5l7YS45V2nDEa%2Fh%252BgDnHJRSHR4%3D</field>
         <field name="Vendor">https://www.mouser.jp/ProductDetail/Vishay-Beyschlag/MCT0603HZ0000ZP500?qs=sGAEpiMZZMukHu%252BjC5l7YS45V2nDEa%2Fh%252BgDnHJRSHR4%3D</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Purchase link" value="https://www.mouser.jp/ProductDetail/Vishay-Beyschlag/MCT0603HZ0000ZP500?qs=sGAEpiMZZMukHu%252BjC5l7YS45V2nDEa%2Fh%252BgDnHJRSHR4%3D"/>
+      <property name="Purchase link" value=""/>
       <property name="Vendor" value="https://www.mouser.jp/ProductDetail/Vishay-Beyschlag/MCT0603HZ0000ZP500?qs=sGAEpiMZZMukHu%252BjC5l7YS45V2nDEa%2Fh%252BgDnHJRSHR4%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
@@ -611,11 +573,10 @@
       <value>5k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="Purchase link">https://www.mouser.jp/ProductDetail/Vishay-BC-Components/NTCS0603E3502FLT?qs=doiCPypUmgFTT6mDFv6oKA%3D%3D</field>
         <field name="Vendor">https://www.mouser.jp/ProductDetail/Vishay-BC-Components/NTCS0603E3502FLT?qs=doiCPypUmgFTT6mDFv6oKA%3D%3D</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Purchase link" value="https://www.mouser.jp/ProductDetail/Vishay-BC-Components/NTCS0603E3502FLT?qs=doiCPypUmgFTT6mDFv6oKA%3D%3D"/>
+      <property name="Purchase link" value=""/>
       <property name="Vendor" value="https://www.mouser.jp/ProductDetail/Vishay-BC-Components/NTCS0603E3502FLT?qs=doiCPypUmgFTT6mDFv6oKA%3D%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
@@ -626,11 +587,10 @@
       <value>5k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="Purchase link">https://www.mouser.jp/ProductDetail/Vishay-BC-Components/NTCS0603E3502FLT?qs=doiCPypUmgFTT6mDFv6oKA%3D%3D</field>
         <field name="Vendor">https://www.mouser.jp/ProductDetail/Vishay-BC-Components/NTCS0603E3502FLT?qs=doiCPypUmgFTT6mDFv6oKA%3D%3D</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Purchase link" value="https://www.mouser.jp/ProductDetail/Vishay-BC-Components/NTCS0603E3502FLT?qs=doiCPypUmgFTT6mDFv6oKA%3D%3D"/>
+      <property name="Purchase link" value=""/>
       <property name="Vendor" value="https://www.mouser.jp/ProductDetail/Vishay-BC-Components/NTCS0603E3502FLT?qs=doiCPypUmgFTT6mDFv6oKA%3D%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
@@ -641,11 +601,10 @@
       <value>5k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="Purchase link">https://www.mouser.jp/ProductDetail/Vishay-BC-Components/NTCS0603E3502FLT?qs=doiCPypUmgFTT6mDFv6oKA%3D%3D</field>
         <field name="Vendor">https://www.mouser.jp/ProductDetail/Vishay-BC-Components/NTCS0603E3502FLT?qs=doiCPypUmgFTT6mDFv6oKA%3D%3D</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Purchase link" value="https://www.mouser.jp/ProductDetail/Vishay-BC-Components/NTCS0603E3502FLT?qs=doiCPypUmgFTT6mDFv6oKA%3D%3D"/>
+      <property name="Purchase link" value=""/>
       <property name="Vendor" value="https://www.mouser.jp/ProductDetail/Vishay-BC-Components/NTCS0603E3502FLT?qs=doiCPypUmgFTT6mDFv6oKA%3D%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
@@ -656,11 +615,10 @@
       <value>5k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="Purchase link">https://www.mouser.jp/ProductDetail/Vishay-BC-Components/NTCS0603E3502FLT?qs=doiCPypUmgFTT6mDFv6oKA%3D%3D</field>
         <field name="Vendor">https://www.mouser.jp/ProductDetail/Vishay-BC-Components/NTCS0603E3502FLT?qs=doiCPypUmgFTT6mDFv6oKA%3D%3D</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Purchase link" value="https://www.mouser.jp/ProductDetail/Vishay-BC-Components/NTCS0603E3502FLT?qs=doiCPypUmgFTT6mDFv6oKA%3D%3D"/>
+      <property name="Purchase link" value=""/>
       <property name="Vendor" value="https://www.mouser.jp/ProductDetail/Vishay-BC-Components/NTCS0603E3502FLT?qs=doiCPypUmgFTT6mDFv6oKA%3D%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
@@ -671,11 +629,10 @@
       <value>100</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="Purchase link">https://www.mouser.jp/ProductDetail/Littelfuse/0603L001-60YR?qs=vmHwEFxEFR%252Bqpk0gfi6KUQ%3D%3D</field>
         <field name="Vendor">https://www.mouser.jp/ProductDetail/Littelfuse/0603L001-60YR?qs=vmHwEFxEFR%252Bqpk0gfi6KUQ%3D%3D</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Purchase link" value="https://www.mouser.jp/ProductDetail/Littelfuse/0603L001-60YR?qs=vmHwEFxEFR%252Bqpk0gfi6KUQ%3D%3D"/>
+      <property name="Purchase link" value=""/>
       <property name="Vendor" value="https://www.mouser.jp/ProductDetail/Littelfuse/0603L001-60YR?qs=vmHwEFxEFR%252Bqpk0gfi6KUQ%3D%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
@@ -686,11 +643,10 @@
       <value>100</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="Purchase link">https://www.mouser.jp/ProductDetail/Littelfuse/0603L001-60YR?qs=vmHwEFxEFR%252Bqpk0gfi6KUQ%3D%3D</field>
         <field name="Vendor">https://www.mouser.jp/ProductDetail/Littelfuse/0603L001-60YR?qs=vmHwEFxEFR%252Bqpk0gfi6KUQ%3D%3D</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Purchase link" value="https://www.mouser.jp/ProductDetail/Littelfuse/0603L001-60YR?qs=vmHwEFxEFR%252Bqpk0gfi6KUQ%3D%3D"/>
+      <property name="Purchase link" value=""/>
       <property name="Vendor" value="https://www.mouser.jp/ProductDetail/Littelfuse/0603L001-60YR?qs=vmHwEFxEFR%252Bqpk0gfi6KUQ%3D%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
@@ -701,11 +657,10 @@
       <value>100</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="Purchase link">https://www.mouser.jp/ProductDetail/Littelfuse/0603L001-60YR?qs=vmHwEFxEFR%252Bqpk0gfi6KUQ%3D%3D</field>
         <field name="Vendor">https://www.mouser.jp/ProductDetail/Littelfuse/0603L001-60YR?qs=vmHwEFxEFR%252Bqpk0gfi6KUQ%3D%3D</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Purchase link" value="https://www.mouser.jp/ProductDetail/Littelfuse/0603L001-60YR?qs=vmHwEFxEFR%252Bqpk0gfi6KUQ%3D%3D"/>
+      <property name="Purchase link" value=""/>
       <property name="Vendor" value="https://www.mouser.jp/ProductDetail/Littelfuse/0603L001-60YR?qs=vmHwEFxEFR%252Bqpk0gfi6KUQ%3D%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
@@ -716,11 +671,10 @@
       <value>100</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="Purchase link">https://www.mouser.jp/ProductDetail/Littelfuse/0603L001-60YR?qs=vmHwEFxEFR%252Bqpk0gfi6KUQ%3D%3D</field>
         <field name="Vendor">https://www.mouser.jp/ProductDetail/Littelfuse/0603L001-60YR?qs=vmHwEFxEFR%252Bqpk0gfi6KUQ%3D%3D</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Purchase link" value="https://www.mouser.jp/ProductDetail/Littelfuse/0603L001-60YR?qs=vmHwEFxEFR%252Bqpk0gfi6KUQ%3D%3D"/>
+      <property name="Purchase link" value=""/>
       <property name="Vendor" value="https://www.mouser.jp/ProductDetail/Littelfuse/0603L001-60YR?qs=vmHwEFxEFR%252Bqpk0gfi6KUQ%3D%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
@@ -731,11 +685,10 @@
       <value>5k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="Purchase link">https://www.mouser.jp/ProductDetail/Vishay-BC-Components/NTCS0603E3502FLT?qs=doiCPypUmgFTT6mDFv6oKA%3D%3D</field>
         <field name="Vendor">https://www.mouser.jp/ProductDetail/Vishay-BC-Components/NTCS0603E3502FLT?qs=doiCPypUmgFTT6mDFv6oKA%3D%3D</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Purchase link" value="https://www.mouser.jp/ProductDetail/Vishay-BC-Components/NTCS0603E3502FLT?qs=doiCPypUmgFTT6mDFv6oKA%3D%3D"/>
+      <property name="Purchase link" value=""/>
       <property name="Vendor" value="https://www.mouser.jp/ProductDetail/Vishay-BC-Components/NTCS0603E3502FLT?qs=doiCPypUmgFTT6mDFv6oKA%3D%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
@@ -746,11 +699,10 @@
       <value>5k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="Purchase link">https://www.mouser.jp/ProductDetail/Vishay-BC-Components/NTCS0603E3502FLT?qs=doiCPypUmgFTT6mDFv6oKA%3D%3D</field>
         <field name="Vendor">https://www.mouser.jp/ProductDetail/Vishay-BC-Components/NTCS0603E3502FLT?qs=doiCPypUmgFTT6mDFv6oKA%3D%3D</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Purchase link" value="https://www.mouser.jp/ProductDetail/Vishay-BC-Components/NTCS0603E3502FLT?qs=doiCPypUmgFTT6mDFv6oKA%3D%3D"/>
+      <property name="Purchase link" value=""/>
       <property name="Vendor" value="https://www.mouser.jp/ProductDetail/Vishay-BC-Components/NTCS0603E3502FLT?qs=doiCPypUmgFTT6mDFv6oKA%3D%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
@@ -761,11 +713,10 @@
       <value>5k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="Purchase link">https://www.mouser.jp/ProductDetail/Vishay-BC-Components/NTCS0603E3502FLT?qs=doiCPypUmgFTT6mDFv6oKA%3D%3D</field>
         <field name="Vendor">https://www.mouser.jp/ProductDetail/Vishay-BC-Components/NTCS0603E3502FLT?qs=doiCPypUmgFTT6mDFv6oKA%3D%3D</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Purchase link" value="https://www.mouser.jp/ProductDetail/Vishay-BC-Components/NTCS0603E3502FLT?qs=doiCPypUmgFTT6mDFv6oKA%3D%3D"/>
+      <property name="Purchase link" value=""/>
       <property name="Vendor" value="https://www.mouser.jp/ProductDetail/Vishay-BC-Components/NTCS0603E3502FLT?qs=doiCPypUmgFTT6mDFv6oKA%3D%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
@@ -776,11 +727,10 @@
       <value>5k</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="Purchase link">https://www.mouser.jp/ProductDetail/Vishay-BC-Components/NTCS0603E3502FLT?qs=doiCPypUmgFTT6mDFv6oKA%3D%3D</field>
         <field name="Vendor">https://www.mouser.jp/ProductDetail/Vishay-BC-Components/NTCS0603E3502FLT?qs=doiCPypUmgFTT6mDFv6oKA%3D%3D</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Purchase link" value="https://www.mouser.jp/ProductDetail/Vishay-BC-Components/NTCS0603E3502FLT?qs=doiCPypUmgFTT6mDFv6oKA%3D%3D"/>
+      <property name="Purchase link" value=""/>
       <property name="Vendor" value="https://www.mouser.jp/ProductDetail/Vishay-BC-Components/NTCS0603E3502FLT?qs=doiCPypUmgFTT6mDFv6oKA%3D%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
@@ -791,11 +741,10 @@
       <value>100</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="Purchase link">https://www.mouser.jp/ProductDetail/Littelfuse/0603L001-60YR?qs=vmHwEFxEFR%252Bqpk0gfi6KUQ%3D%3D</field>
         <field name="Vendor">https://www.mouser.jp/ProductDetail/Littelfuse/0603L001-60YR?qs=vmHwEFxEFR%252Bqpk0gfi6KUQ%3D%3D</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Purchase link" value="https://www.mouser.jp/ProductDetail/Littelfuse/0603L001-60YR?qs=vmHwEFxEFR%252Bqpk0gfi6KUQ%3D%3D"/>
+      <property name="Purchase link" value=""/>
       <property name="Vendor" value="https://www.mouser.jp/ProductDetail/Littelfuse/0603L001-60YR?qs=vmHwEFxEFR%252Bqpk0gfi6KUQ%3D%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
@@ -806,11 +755,10 @@
       <value>100</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="Purchase link">https://www.mouser.jp/ProductDetail/Littelfuse/0603L001-60YR?qs=vmHwEFxEFR%252Bqpk0gfi6KUQ%3D%3D</field>
         <field name="Vendor">https://www.mouser.jp/ProductDetail/Littelfuse/0603L001-60YR?qs=vmHwEFxEFR%252Bqpk0gfi6KUQ%3D%3D</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Purchase link" value="https://www.mouser.jp/ProductDetail/Littelfuse/0603L001-60YR?qs=vmHwEFxEFR%252Bqpk0gfi6KUQ%3D%3D"/>
+      <property name="Purchase link" value=""/>
       <property name="Vendor" value="https://www.mouser.jp/ProductDetail/Littelfuse/0603L001-60YR?qs=vmHwEFxEFR%252Bqpk0gfi6KUQ%3D%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
@@ -821,11 +769,10 @@
       <value>100</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="Purchase link">https://www.mouser.jp/ProductDetail/Littelfuse/0603L001-60YR?qs=vmHwEFxEFR%252Bqpk0gfi6KUQ%3D%3D</field>
         <field name="Vendor">https://www.mouser.jp/ProductDetail/Littelfuse/0603L001-60YR?qs=vmHwEFxEFR%252Bqpk0gfi6KUQ%3D%3D</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Purchase link" value="https://www.mouser.jp/ProductDetail/Littelfuse/0603L001-60YR?qs=vmHwEFxEFR%252Bqpk0gfi6KUQ%3D%3D"/>
+      <property name="Purchase link" value=""/>
       <property name="Vendor" value="https://www.mouser.jp/ProductDetail/Littelfuse/0603L001-60YR?qs=vmHwEFxEFR%252Bqpk0gfi6KUQ%3D%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
@@ -836,11 +783,10 @@
       <value>100</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="Purchase link">https://www.mouser.jp/ProductDetail/Littelfuse/0603L001-60YR?qs=vmHwEFxEFR%252Bqpk0gfi6KUQ%3D%3D</field>
         <field name="Vendor">https://www.mouser.jp/ProductDetail/Littelfuse/0603L001-60YR?qs=vmHwEFxEFR%252Bqpk0gfi6KUQ%3D%3D</field>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Purchase link" value="https://www.mouser.jp/ProductDetail/Littelfuse/0603L001-60YR?qs=vmHwEFxEFR%252Bqpk0gfi6KUQ%3D%3D"/>
+      <property name="Purchase link" value=""/>
       <property name="Vendor" value="https://www.mouser.jp/ProductDetail/Littelfuse/0603L001-60YR?qs=vmHwEFxEFR%252Bqpk0gfi6KUQ%3D%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
@@ -850,7 +796,11 @@
     <comp ref="SW1">
       <value>SW_Push</value>
       <footprint>Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2</footprint>
+      <fields>
+        <field name="Vendor">https://www.mouser.jp/ProductDetail/CK/KMR231NGLFS?qs=sb%252But3Lm4x1Y5NsXXdZx2g%3D%3D</field>
+      </fields>
       <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="Vendor" value="https://www.mouser.jp/ProductDetail/CK/KMR231NGLFS?qs=sb%252But3Lm4x1Y5NsXXdZx2g%3D%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
@@ -859,7 +809,11 @@
     <comp ref="SW2">
       <value>SW_Push</value>
       <footprint>Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2</footprint>
+      <fields>
+        <field name="Vendor">https://www.mouser.jp/ProductDetail/CK/KMR231NGLFS?qs=sb%252But3Lm4x1Y5NsXXdZx2g%3D%3D</field>
+      </fields>
       <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="Vendor" value="https://www.mouser.jp/ProductDetail/CK/KMR231NGLFS?qs=sb%252But3Lm4x1Y5NsXXdZx2g%3D%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
@@ -868,7 +822,11 @@
     <comp ref="SW3">
       <value>SW_Push</value>
       <footprint>Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm</footprint>
+      <fields>
+        <field name="Vendor">https://www.mouser.jp/ProductDetail/Diptronics/DTSM-65N-V-B?qs=gTYE2QTfZfSXwXAGPNekUg%3D%3D</field>
+      </fields>
       <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="Vendor" value="https://www.mouser.jp/ProductDetail/Diptronics/DTSM-65N-V-B?qs=gTYE2QTfZfSXwXAGPNekUg%3D%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
@@ -877,7 +835,11 @@
     <comp ref="SW4">
       <value>SW_Push</value>
       <footprint>Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm</footprint>
+      <fields>
+        <field name="Vendor">https://www.mouser.jp/ProductDetail/Diptronics/DTSM-65N-V-B?qs=gTYE2QTfZfSXwXAGPNekUg%3D%3D</field>
+      </fields>
       <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="Vendor" value="https://www.mouser.jp/ProductDetail/Diptronics/DTSM-65N-V-B?qs=gTYE2QTfZfSXwXAGPNekUg%3D%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
@@ -886,7 +848,11 @@
     <comp ref="SW5">
       <value>SW_Push</value>
       <footprint>Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm</footprint>
+      <fields>
+        <field name="Vendor">https://www.mouser.jp/ProductDetail/Diptronics/DTSM-65N-V-B?qs=gTYE2QTfZfSXwXAGPNekUg%3D%3D</field>
+      </fields>
       <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="Vendor" value="https://www.mouser.jp/ProductDetail/Diptronics/DTSM-65N-V-B?qs=gTYE2QTfZfSXwXAGPNekUg%3D%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
@@ -895,7 +861,11 @@
     <comp ref="SW6">
       <value>SW_Push</value>
       <footprint>Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm</footprint>
+      <fields>
+        <field name="Vendor">https://www.mouser.jp/ProductDetail/Diptronics/DTSM-65N-V-B?qs=gTYE2QTfZfSXwXAGPNekUg%3D%3D</field>
+      </fields>
       <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="Vendor" value="https://www.mouser.jp/ProductDetail/Diptronics/DTSM-65N-V-B?qs=gTYE2QTfZfSXwXAGPNekUg%3D%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
@@ -904,7 +874,11 @@
     <comp ref="SW7">
       <value>SW_Push</value>
       <footprint>Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm</footprint>
+      <fields>
+        <field name="Vendor">https://www.mouser.jp/ProductDetail/Diptronics/DTSM-65N-V-B?qs=gTYE2QTfZfSXwXAGPNekUg%3D%3D</field>
+      </fields>
       <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="Vendor" value="https://www.mouser.jp/ProductDetail/Diptronics/DTSM-65N-V-B?qs=gTYE2QTfZfSXwXAGPNekUg%3D%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
@@ -913,7 +887,11 @@
     <comp ref="SW8">
       <value>SW_Push</value>
       <footprint>Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm</footprint>
+      <fields>
+        <field name="Vendor">https://www.mouser.jp/ProductDetail/Diptronics/DTSM-65N-V-B?qs=gTYE2QTfZfSXwXAGPNekUg%3D%3D</field>
+      </fields>
       <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="Vendor" value="https://www.mouser.jp/ProductDetail/Diptronics/DTSM-65N-V-B?qs=gTYE2QTfZfSXwXAGPNekUg%3D%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
@@ -922,7 +900,11 @@
     <comp ref="SW9">
       <value>SW_Push</value>
       <footprint>Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm</footprint>
+      <fields>
+        <field name="Vendor">https://www.mouser.jp/ProductDetail/Diptronics/DTSM-65N-V-B?qs=gTYE2QTfZfSXwXAGPNekUg%3D%3D</field>
+      </fields>
       <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="Vendor" value="https://www.mouser.jp/ProductDetail/Diptronics/DTSM-65N-V-B?qs=gTYE2QTfZfSXwXAGPNekUg%3D%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
@@ -931,7 +913,11 @@
     <comp ref="SW10">
       <value>SW_Push</value>
       <footprint>Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm</footprint>
+      <fields>
+        <field name="Vendor">https://www.mouser.jp/ProductDetail/Diptronics/DTSM-65N-V-B?qs=gTYE2QTfZfSXwXAGPNekUg%3D%3D</field>
+      </fields>
       <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="Vendor" value="https://www.mouser.jp/ProductDetail/Diptronics/DTSM-65N-V-B?qs=gTYE2QTfZfSXwXAGPNekUg%3D%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
@@ -942,11 +928,10 @@
       <footprint>Package_TO_SOT_SMD:SOT-223-3_TabPin2</footprint>
       <datasheet>https://www.analog.com/media/en/technical-documentation/data-sheets/1963aff.pdf</datasheet>
       <fields>
-        <field name="Purchase link">https://www.mouser.jp/ProductDetail/Analog-Devices/LT1963AEST-3.3PBF?qs=ytflclh7QUWACCdXyVJ5gA%3D%3D</field>
         <field name="Vendor">https://www.mouser.jp/ProductDetail/Analog-Devices/LT1963AEST-3.3PBF?qs=ytflclh7QUWACCdXyVJ5gA%3D%3D</field>
       </fields>
       <libsource lib="Regulator_Linear" part="LT1963AxST-3.3" description="3.3V, 1.5A, Low Noise, Fast Transient Response LDO Regulator, SOT-223"/>
-      <property name="Purchase link" value="https://www.mouser.jp/ProductDetail/Analog-Devices/LT1963AEST-3.3PBF?qs=ytflclh7QUWACCdXyVJ5gA%3D%3D"/>
+      <property name="Purchase link" value=""/>
       <property name="Vendor" value="https://www.mouser.jp/ProductDetail/Analog-Devices/LT1963AEST-3.3PBF?qs=ytflclh7QUWACCdXyVJ5gA%3D%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
@@ -969,7 +954,6 @@ Bluetooth, WiFi 802.11b/g/n, Bluetooth v4.2 +EDR, Class 1, 2 and 3 Transceiver M
         <field name="PARTREV">v1.6</field>
         <field name="Package">Module Espressif Systems</field>
         <field name="Price">None</field>
-        <field name="Purchase link">https://www.digikey.jp/ja/products/detail/espressif-systems/ESP32-WROVER-B-N8R8/9857843</field>
         <field name="STANDARD">Manufacturer Recommendations</field>
         <field name="SnapEDA_Link">https://www.snapeda.com/parts/ESP32-WROVER-B/Espressif+Systems/view-part/?ref=snap</field>
         <field name="Vendor">https://www.digikey.jp/ja/products/detail/espressif-systems/ESP32-WROVER-B-N8R8/9857843</field>
@@ -987,7 +971,7 @@ Bluetooth, WiFi 802.11b/g/n, Bluetooth v4.2 +EDR, Class 1, 2 and 3 Transceiver M
       <property name="Description" value="&#xA;Bluetooth, WiFi 802.11b/g/n, Bluetooth v4.2 +EDR, Class 1, 2 and 3 Transceiver Module 2.4GHz ~ 2.5GHz PCB Trace Surface Mount&#xA;"/>
       <property name="Availability" value="Not in stock"/>
       <property name="MANUFACTURER" value="Espressif Systems"/>
-      <property name="Purchase link" value="https://www.digikey.jp/ja/products/detail/espressif-systems/ESP32-WROVER-B-N8R8/9857843"/>
+      <property name="Purchase link" value=""/>
       <property name="Vendor" value="https://www.digikey.jp/ja/products/detail/espressif-systems/ESP32-WROVER-B-N8R8/9857843"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>
@@ -999,11 +983,10 @@ Bluetooth, WiFi 802.11b/g/n, Bluetooth v4.2 +EDR, Class 1, 2 and 3 Transceiver M
       <footprint>Package_DFN_QFN:QFN-28-1EP_5x5mm_P0.5mm_EP3.35x3.35mm</footprint>
       <datasheet>https://www.silabs.com/documents/public/data-sheets/cp2102n-datasheet.pdf</datasheet>
       <fields>
-        <field name="Purchase link">https://www.mouser.jp/ProductDetail/Silicon-Labs/CP2102N-A02-GQFN28?qs=u16ybLDytRaSBkSkyjYFiA%3D%3D</field>
         <field name="Vendor">https://www.mouser.jp/ProductDetail/Silicon-Labs/CP2102N-A02-GQFN28?qs=u16ybLDytRaSBkSkyjYFiA%3D%3D</field>
       </fields>
       <libsource lib="Interface_USB" part="CP2102N-Axx-xQFN28" description="USB to UART master bridge, QFN-28"/>
-      <property name="Purchase link" value="https://www.mouser.jp/ProductDetail/Silicon-Labs/CP2102N-A02-GQFN28?qs=u16ybLDytRaSBkSkyjYFiA%3D%3D"/>
+      <property name="Purchase link" value=""/>
       <property name="Vendor" value="https://www.mouser.jp/ProductDetail/Silicon-Labs/CP2102N-A02-GQFN28?qs=u16ybLDytRaSBkSkyjYFiA%3D%3D"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="remote_controller.kicad_sch"/>

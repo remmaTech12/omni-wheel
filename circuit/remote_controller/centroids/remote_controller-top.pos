@@ -11,8 +11,8 @@ C5        0.1u                     C_0603_1608Metric                          15
 C6        0.1u                     C_0603_1608Metric                          15.1650    14.1700    0.0000  top
 C7        4.7u                     C_0603_1608Metric                          26.8950    13.7600    0.0000  top
 C8        0.1u                     C_0603_1608Metric                          26.9050    17.5600    0.0000  top
-CCW       SW_Push                  SW_Push_1P1T_NO_6x6mm_H9.5mm               17.6500    40.3300    0.0000  top
-CW        SW_Push                  SW_Push_1P1T_NO_6x6mm_H9.5mm               33.4500    40.3100    0.0000  top
+SW5       SW_Push                  SW_Push_1P1T_NO_6x6mm_H9.5mm               17.6500    40.3300    0.0000  top
+SW9       SW_Push                  SW_Push_1P1T_NO_6x6mm_H9.5mm               33.4500    40.3100    0.0000  top
 D1        LED                      D_0603_1608Metric                           9.3500     6.3400    0.0000  top
 D2        SP0503BAHT               SOT-143                                    30.5100    24.5600    0.0000  top
 D3        LED                      D_0603_1608Metric                          36.9975    99.0000  180.0000  top
@@ -26,14 +26,14 @@ D10       LED                      D_0603_1608Metric                          18
 D11       LED                      D_0603_1608Metric                          32.1175    59.8725  -90.0000  top
 D12       LED                      D_0603_1608Metric                          39.5000    40.2975  -90.0000  top
 D13       LED                      D_0603_1608Metric                          39.4400    30.8500  -90.0000  top
-DOWN      SW_Push                  SW_Push_1P1T_NO_6x6mm_H9.5mm               25.5775    48.8650    0.0000  top
-EN        SW_Push                  SW_Push_1P1T_NO_CK_KMR2                    19.3375    22.7900    0.0000  top
-IO0       SW_Push                  SW_Push_1P1T_NO_CK_KMR2                    19.3300    16.8700    0.0000  top
+SW4       SW_Push                  SW_Push_1P1T_NO_6x6mm_H9.5mm               25.5775    48.8650    0.0000  top
+SW1       SW_Push                  SW_Push_1P1T_NO_CK_KMR2                    19.3375    22.7900    0.0000  top
+SW2       SW_Push                  SW_Push_1P1T_NO_CK_KMR2                    19.3300    16.8700    0.0000  top
 J1        Conn_01x02_Male          PinHeader_1x02_P2.54mm_Vertical            15.1900     2.0800   90.0000  top
 J2        USB_C_Receptacle_USB2.0  USB_C_Receptacle_Amphenol_12401610E4-2A    33.7800     5.8800    0.0000  top
-LEFT      SW_Push                  SW_Push_1P1T_NO_6x6mm_H9.5mm               12.2875    60.0900    0.0000  top
-OPT1      SW_Push                  SW_Push_1P1T_NO_6x6mm_H9.5mm               17.6500    30.8600    0.0000  top
-OPT2      SW_Push                  SW_Push_1P1T_NO_6x6mm_H9.5mm               33.4800    30.8700    0.0000  top
+SW7       SW_Push                  SW_Push_1P1T_NO_6x6mm_H9.5mm               12.2875    60.0900    0.0000  top
+SW6       SW_Push                  SW_Push_1P1T_NO_6x6mm_H9.5mm               17.6500    30.8600    0.0000  top
+SW10      SW_Push                  SW_Push_1P1T_NO_6x6mm_H9.5mm               33.4800    30.8700    0.0000  top
 Q1        SS8050-G                 SOT-23                                     13.4600    22.7800    0.0000  top
 Q2        SS8050-G                 SOT-23                                     13.4600    16.8700    0.0000  top
 R1        10k                      R_0603_1608Metric                          10.4000    22.7300  -90.0000  top
@@ -66,9 +66,9 @@ R27       100                      R_0603_1608Metric                          21
 R28       100                      R_0603_1608Metric                          29.4525    60.6600    0.0000  top
 R29       100                      R_0603_1608Metric                          41.9550    41.0875  180.0000  top
 R30       100                      R_0603_1608Metric                          41.9250    31.6400  180.0000  top
-RIGHT     SW_Push                  SW_Push_1P1T_NO_6x6mm_H9.5mm               38.4425    60.0800    0.0000  top
+SW8       SW_Push                  SW_Push_1P1T_NO_6x6mm_H9.5mm               38.4425    60.0800    0.0000  top
 U1        LT1963AxST-3.3           SOT-223-3_TabPin2                          16.3000     7.9400    0.0000  top
 U2        ESP32-WROVER-B           MODULE_ESP32-WROVER-B                      25.0000    92.0000    0.0000  top
 U3        CP2102N-Axx-xQFN28       QFN-28-1EP_5x5mm_P0.5mm_EP3.35x3.35mm      36.9400    23.1400    0.0000  top
-UPPER     SW_Push                  SW_Push_1P1T_NO_6x6mm_H9.5mm               25.6000    71.0800    0.0000  top
+SW3       SW_Push                  SW_Push_1P1T_NO_6x6mm_H9.5mm               25.6000    71.0800    0.0000  top
 ## End

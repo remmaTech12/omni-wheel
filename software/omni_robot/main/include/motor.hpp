@@ -1,25 +1,41 @@
+#pragma once
 #include "Arduino.h"
 
 class Motor {
    public:
     Motor() {}
-    static void encoder_func_wrapper() {
-      instance->encoder_func();
+    static void encoder_func_wrapper0() {
+      instances[0]->encoder_func();
+    }
+    static void encoder_func_wrapper1() {
+      instances[1]->encoder_func();
+    }
+    static void encoder_func_wrapper2() {
+      instances[2]->encoder_func();
     }
 
     void setup(const int encoder_pin_A, const int encoder_pin_B,
-               const int motor_pin_A1, const int motor_pin_A2)
-    {
+               const int motor_pin_A1, const int motor_pin_A2,
+               const int id) {
       encoder_pin_A_ = encoder_pin_A;
       encoder_pin_B_ = encoder_pin_B;
       motor_pin_A1_ = motor_pin_A1;
       motor_pin_A2_ = motor_pin_A2;
 
-      instance = this;
+      id_ = id;
+      instances[id] = this;
 
       pinMode(encoder_pin_A_, INPUT);
       pinMode(encoder_pin_B_, INPUT);
-      attachInterrupt(digitalPinToInterrupt(encoder_pin_A_), encoder_func_wrapper, RISING);
+      if (id == 0) {
+        attachInterrupt(digitalPinToInterrupt(encoder_pin_A_), encoder_func_wrapper0, RISING);
+      }
+      else if (id == 1) {
+        attachInterrupt(digitalPinToInterrupt(encoder_pin_A_), encoder_func_wrapper1, RISING);
+      }
+      else if (id == 2) {
+        attachInterrupt(digitalPinToInterrupt(encoder_pin_A_), encoder_func_wrapper2, RISING);
+      }
     }
 
     void encoder_func() {
@@ -43,7 +59,7 @@ class Motor {
       const double interval_sec = interval_ms / 1000.0;
       const int ppr_val = 7;
       const int gear_ratio = 100;
-      const int rpm_ = (float)(60 * encoder_value_ / interval_sec / ppr_val / gear_ratio);
+      rpm_ = (float)(60 * encoder_value_ / interval_sec / ppr_val / gear_ratio);
       Serial.print(rpm_);
       Serial.println(" rpm");
 
@@ -52,7 +68,8 @@ class Motor {
     void clear_encoder_value() { encoder_value_ = 0; }
 
    private:
-    static Motor* instance;
+    static Motor* instances[3];
+    int id_;
 
     int encoder_pin_A_;
     int encoder_pin_B_;
@@ -63,4 +80,4 @@ class Motor {
     int rpm_ = 0;
 };
 
-Motor* Motor::instance = nullptr;
+Motor* Motor::instances[3] = {nullptr, nullptr, nullptr};

@@ -18,7 +18,7 @@
 
 #define MOTOR_NUM 3
 
-PID pid_;
+PID pid_[3];
 Motor motor_[3];
 
 unsigned long previous_ms = 0;
@@ -50,10 +50,10 @@ void loop()
     output_time();
     
     for (int i = 0; i < MOTOR_NUM; i++) {
-      const int target_rpm = 30;
+      const int target_rpm = 60;
       motor_[i].calculate_rpm(interval_ms);
-      const int cmd_val = pid_.calculate_pid(target_rpm, motor_[i].get_rpm(), interval_ms);
-      motor_[i].cw_rotate_motor(100);
+      const int cmd_val = pid_[i].calculate_pid(target_rpm, motor_[i].get_rpm(), interval_ms);
+      motor_[i].cw_rotate_motor(cmd_val);
     }
 
     for (int i = 0; i < MOTOR_NUM; i++) { motor_[i].clear_encoder_value(); }

@@ -21,11 +21,12 @@ class PID {
       i_err_ += (double) err * interval_ms / 1000.0;
       i_err_ = constrain(i_err_, -max_i_err_, max_i_err_);
       const int cmd_val = constrain(p_gain_ * err + i_gain_ * i_err_, 0, 255);
+
       return cmd_val;
     }
 
    private:
-    double p_gain_ = 1.0;
+    double p_gain_ = 5.0;
     double i_gain_ = 1.0;
     double d_gain_ = 0.0;
 

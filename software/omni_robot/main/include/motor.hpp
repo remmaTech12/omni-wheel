@@ -3,48 +3,25 @@
 
 class Motor {
    public:
+    // setup
     Motor() {}
-    static void encoder_func_wrapper0() {
-      instances[0]->encoder_func();
-    }
-    static void encoder_func_wrapper1() {
-      instances[1]->encoder_func();
-    }
-    static void encoder_func_wrapper2() {
-      instances[2]->encoder_func();
-    }
+    void setup(const int id,
+               const int encoder_pin_A, const int encoder_pin_B,
+               const int motor_pin_A1, const int motor_pin_A2) {
+      id_ = id;
+      instances[id] = this;
 
-    void setup(const int encoder_pin_A, const int encoder_pin_B,
-               const int motor_pin_A1, const int motor_pin_A2,
-               const int id) {
       encoder_pin_A_ = encoder_pin_A;
       encoder_pin_B_ = encoder_pin_B;
       motor_pin_A1_ = motor_pin_A1;
       motor_pin_A2_ = motor_pin_A2;
-
-      id_ = id;
-      instances[id] = this;
 
       pinMode(encoder_pin_A_, INPUT);
       pinMode(encoder_pin_B_, INPUT);
       attachInterrupt(digitalPinToInterrupt(encoder_pin_A_), wrapper_functions[id], RISING);
     }
 
-    void encoder_func() {
-      // A_val and B_val are HIGH / LOW
-      int A_state = digitalRead(encoder_pin_A_);
-      int B_state = digitalRead(encoder_pin_B_);
-      if (A_state == B_state) {
-        encoder_value_++;  // counter clockwise
-      } else {
-        encoder_value_--;  // clockwise
-      }
-    }
-
-    volatile long get_encoder_value() {
-      return encoder_value_;
-    }
-
+    // rpm
     int get_rpm() { return rpm_; }
     int calculate_rpm(const unsigned long interval_ms)
     {
@@ -57,10 +34,34 @@ class Motor {
 
       return rpm_;
     }
+
+    // encoder
+    volatile long get_encoder_value() { return encoder_value_; }
     void clear_encoder_value() { encoder_value_ = 0; }
+    void encoder_func() {
+      // A_val and B_val are HIGH / LOW
+      int A_state = digitalRead(encoder_pin_A_);
+      int B_state = digitalRead(encoder_pin_B_);
+      if (A_state == B_state) {
+        encoder_value_++;  // counter clockwise
+      } else {
+        encoder_value_--;  // clockwise
+      }
+    }
+    static void encoder_func_wrapper0() {
+      instances[0]->encoder_func();
+    }
+    static void encoder_func_wrapper1() {
+      instances[1]->encoder_func();
+    }
+    static void encoder_func_wrapper2() {
+      instances[2]->encoder_func();
+    }
 
    private:
     static Motor* instances[3];
+    static void (*wrapper_functions[3])();
+
     int id_;
 
     int encoder_pin_A_;
@@ -70,8 +71,6 @@ class Motor {
 
     volatile long encoder_value_ = 0;
     int rpm_ = 0;
-
-    static void (*wrapper_functions[3])();
 };
 
 Motor* Motor::instances[3] = {nullptr, nullptr, nullptr};

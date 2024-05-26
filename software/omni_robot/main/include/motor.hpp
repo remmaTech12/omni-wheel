@@ -27,15 +27,7 @@ class Motor {
 
       pinMode(encoder_pin_A_, INPUT);
       pinMode(encoder_pin_B_, INPUT);
-      if (id == 0) {
-        attachInterrupt(digitalPinToInterrupt(encoder_pin_A_), encoder_func_wrapper0, RISING);
-      }
-      else if (id == 1) {
-        attachInterrupt(digitalPinToInterrupt(encoder_pin_A_), encoder_func_wrapper1, RISING);
-      }
-      else if (id == 2) {
-        attachInterrupt(digitalPinToInterrupt(encoder_pin_A_), encoder_func_wrapper2, RISING);
-      }
+      attachInterrupt(digitalPinToInterrupt(encoder_pin_A_), wrapper_functions[id], RISING);
     }
 
     void encoder_func() {
@@ -78,6 +70,9 @@ class Motor {
 
     volatile long encoder_value_ = 0;
     int rpm_ = 0;
+
+    static void (*wrapper_functions[3])();
 };
 
 Motor* Motor::instances[3] = {nullptr, nullptr, nullptr};
+void (*Motor::wrapper_functions[3])() = {Motor::encoder_func_wrapper0, Motor::encoder_func_wrapper1, Motor::encoder_func_wrapper2};

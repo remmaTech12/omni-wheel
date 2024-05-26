@@ -18,6 +18,8 @@ class Motor {
 
       pinMode(encoder_pin_A_, INPUT);
       pinMode(encoder_pin_B_, INPUT);
+      pinMode(motor_pin_A1_, OUTPUT);
+      pinMode(motor_pin_A2_, OUTPUT);
       attachInterrupt(digitalPinToInterrupt(encoder_pin_A_), wrapper_functions[id], RISING);
     }
 
@@ -56,6 +58,28 @@ class Motor {
     }
     static void encoder_func_wrapper2() {
       instances[2]->encoder_func();
+    }
+
+    // move motor
+    void cw_rotate_motor(int speed)
+    {
+      analogWrite(motor_pin_A1_, speed);
+      analogWrite(motor_pin_A2_, 0);
+    }
+    void ccw_rotate_motor(int speed)
+    {
+      analogWrite(motor_pin_A1_, 0);
+      analogWrite(motor_pin_A2_, speed);
+    }
+    void brake_motor()
+    {
+      analogWrite(motor_pin_A1_, 255);
+      analogWrite(motor_pin_A2_, 255);
+    }
+    void stop_motor()
+    {
+      analogWrite(motor_pin_A1_, 0);
+      analogWrite(motor_pin_A2_, 0);
     }
 
    private:

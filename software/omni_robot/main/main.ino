@@ -8,13 +8,13 @@
 
 #define ENCODER2_A_PIN 22
 #define ENCODER2_B_PIN 23
-#define MOTOR2_A1_PIN 13
-#define MOTOR2_A2_PIN 12
+#define MOTOR2_A1_PIN 26
+#define MOTOR2_A2_PIN 27
 
 #define ENCODER3_A_PIN 19
 #define ENCODER3_B_PIN 21
-#define MOTOR3_A1_PIN 13
-#define MOTOR3_A2_PIN 12
+#define MOTOR3_A1_PIN 4
+#define MOTOR3_A2_PIN 18
 
 #define MOTOR_NUM 3
 
@@ -40,28 +40,6 @@ void output_time()
   Serial.println(time);
 }
 
-void cw_rotate_motor(int speed)
-{
-  analogWrite(MOTOR1_A1_PIN, speed);
-  analogWrite(MOTOR1_A2_PIN, 0);
-  analogWrite(MOTOR2_A1_PIN, speed);
-  analogWrite(MOTOR2_A2_PIN, 0);
-  analogWrite(MOTOR3_A1_PIN, speed);
-  analogWrite(MOTOR3_A2_PIN, 0);
-}
-
-void ccw_rotate_motor(int speed)
-{
-  analogWrite(MOTOR1_A1_PIN, 0);
-  analogWrite(MOTOR1_A2_PIN, speed);
-}
-
-void brake_motor()
-{
-  analogWrite(MOTOR1_A1_PIN, 255);
-  analogWrite(MOTOR1_A2_PIN, 255);
-}
-
 void loop()
 {
   const unsigned long interval_ms = 50;
@@ -71,10 +49,12 @@ void loop()
     previous_ms = current_ms;
     output_time();
     
-    for (int i = 0; i < MOTOR_NUM; i++) { motor_[i].calculate_rpm(interval_ms); }
-    const int target_rpm = 30;
-    const int cmd_val = pid_.calculate_pid(target_rpm, motor_[0].get_rpm(), interval_ms);
-    cw_rotate_motor(cmd_val);
+    for (int i = 0; i < MOTOR_NUM; i++) {
+      const int target_rpm = 30;
+      motor_[i].calculate_rpm(interval_ms);
+      const int cmd_val = pid_.calculate_pid(target_rpm, motor_[i].get_rpm(), interval_ms);
+      motor_[i].cw_rotate_motor(100);
+    }
 
     for (int i = 0; i < MOTOR_NUM; i++) { motor_[i].clear_encoder_value(); }
   }

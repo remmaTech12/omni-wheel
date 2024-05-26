@@ -19,9 +19,7 @@
 #define MOTOR_NUM 3
 
 PID pid_;
-Motor motor1_;
-Motor motor2_;
-Motor motor3_;
+Motor motor_[3];
 
 unsigned long previous_ms = 0;
 double i_err = 0;
@@ -30,9 +28,9 @@ double pre_err = 0;
 void setup()
 {
   Serial.begin(115200);
-  motor1_.setup(0, ENCODER1_A_PIN, ENCODER1_B_PIN, MOTOR1_A1_PIN, MOTOR1_A2_PIN);
-  motor2_.setup(1, ENCODER2_A_PIN, ENCODER2_B_PIN, MOTOR2_A1_PIN, MOTOR2_A2_PIN);
-  motor3_.setup(2, ENCODER3_A_PIN, ENCODER3_B_PIN, MOTOR3_A1_PIN, MOTOR3_A2_PIN);
+  motor_[0].setup(0, ENCODER1_A_PIN, ENCODER1_B_PIN, MOTOR1_A1_PIN, MOTOR1_A2_PIN);
+  motor_[1].setup(1, ENCODER2_A_PIN, ENCODER2_B_PIN, MOTOR2_A1_PIN, MOTOR2_A2_PIN);
+  motor_[2].setup(2, ENCODER3_A_PIN, ENCODER3_B_PIN, MOTOR3_A1_PIN, MOTOR3_A2_PIN);
 }
 
 void output_time()
@@ -73,18 +71,11 @@ void loop()
     previous_ms = current_ms;
     output_time();
     
-    motor1_.calculate_rpm(interval_ms);
-    motor2_.calculate_rpm(interval_ms);
-    motor3_.calculate_rpm(interval_ms);
-    Serial.println("motor1: " + String(motor1_.get_rpm()));
-    Serial.println("motor2: " + String(motor2_.get_rpm()));
-    Serial.println("motor3: " + String(motor3_.get_rpm()));
+    for (int i = 0; i < MOTOR_NUM; i++) { motor_[i].calculate_rpm(interval_ms); }
     const int target_rpm = 30;
-    const int cmd_val = pid_.calculate_pid(target_rpm, motor1_.get_rpm(), interval_ms);
+    const int cmd_val = pid_.calculate_pid(target_rpm, motor_[0].get_rpm(), interval_ms);
     cw_rotate_motor(cmd_val);
 
-    motor1_.clear_encoder_value();
-    motor2_.clear_encoder_value();
-    motor3_.clear_encoder_value();
+    for (int i = 0; i < MOTOR_NUM; i++) { motor_[i].clear_encoder_value(); }
   }
 }

@@ -28,6 +28,7 @@ int   xMag  = 0;
 int   yMag  = 0;
 int   zMag  = 0;
 
+/*
 void setup()
 {
   // Wire(Arduino-I2C)の初期化
@@ -75,6 +76,7 @@ void loop()
   
   delay(1000);
 }
+*/
 
 //=====================================================================================//
 void BMX055_Init()
@@ -170,9 +172,9 @@ void BMX055_Accl()
   if (yAccl > 2047)  yAccl -= 4096;
   zAccl = ((data[5] * 256) + (data[4] & 0xF0)) / 16;
   if (zAccl > 2047)  zAccl -= 4096;
-  xAccl = xAccl * 0.00098; // range = +/-2g
-  yAccl = yAccl * 0.00098; // range = +/-2g
-  zAccl = zAccl * 0.00098; // range = +/-2g
+  xAccl = xAccl * 0.0098; // range = +/-2g
+  yAccl = yAccl * 0.0098; // range = +/-2g
+  zAccl = zAccl * 0.0098; // range = +/-2g
 }
 //=====================================================================================//
 void BMX055_Gyro()

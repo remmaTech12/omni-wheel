@@ -3,20 +3,22 @@
 #include "./include/motor.hpp"
 #include "./include/imu_bmx055.hpp"
 
-#define ENCODER1_A_PIN 32
-#define ENCODER1_B_PIN 33
-#define MOTOR1_A1_PIN 13
-#define MOTOR1_A2_PIN 12
+#define MOTOR1_ENC_A_PIN 32
+#define MOTOR1_ENC_B_PIN 33
+#define MOTOR1_IN1_PIN 13
+#define MOTOR1_IN2_PIN 12
 
-#define ENCODER2_A_PIN 25
-#define ENCODER2_B_PIN 23
-#define MOTOR2_A1_PIN 26
-#define MOTOR2_A2_PIN 27
+#define MOTOR2_ENC_A_PIN 25
+#define MOTOR2_ENC_B_PIN 23
+#define MOTOR2_IN1_PIN 26
+#define MOTOR2_IN2_PIN 27
 
-#define ENCODER3_A_PIN 19
-#define ENCODER3_B_PIN 18
-#define MOTOR3_A1_PIN 4
-#define MOTOR3_A2_PIN 18
+#define MOTOR3_ENC_A_PIN 19
+#define MOTOR3_ENC_B_PIN 18
+#define MOTOR3_IN1_PIN 4
+#define MOTOR3_IN2_PIN 14
+
+#define LED_PIN 2
 
 #define MOTOR_NUM 3
 
@@ -33,9 +35,9 @@ void setup()
   BMX055_Init();
 
   Serial.begin(115200);
-  motor_[0].setup(0, ENCODER1_A_PIN, ENCODER1_B_PIN, MOTOR1_A1_PIN, MOTOR1_A2_PIN);
-  motor_[1].setup(1, ENCODER2_A_PIN, ENCODER2_B_PIN, MOTOR2_A1_PIN, MOTOR2_A2_PIN);
-  motor_[2].setup(2, ENCODER3_A_PIN, ENCODER3_B_PIN, MOTOR3_A1_PIN, MOTOR3_A2_PIN);
+  motor_[0].setup(0, MOTOR1_ENC_A_PIN, MOTOR1_ENC_B_PIN, MOTOR1_IN1_PIN, MOTOR1_IN2_PIN);
+  motor_[1].setup(1, MOTOR2_ENC_A_PIN, MOTOR2_ENC_B_PIN, MOTOR2_IN1_PIN, MOTOR2_IN2_PIN);
+  motor_[2].setup(2, MOTOR3_ENC_A_PIN, MOTOR3_ENC_B_PIN, MOTOR3_IN1_PIN, MOTOR3_IN2_PIN);
 
   delay(300);
 }
@@ -57,7 +59,7 @@ void loop()
     output_time();
     
     for (int i = 0; i < MOTOR_NUM; i++) {
-      const int target_rpm = 120;
+      const int target_rpm = 30;
       motor_[i].calculate_rpm(interval_ms);
       const int cmd_val = pid_[i].calculate_pid(target_rpm, motor_[i].get_rpm(), interval_ms);
       motor_[i].cw_rotate_motor(cmd_val);

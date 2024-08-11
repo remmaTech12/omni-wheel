@@ -8,7 +8,7 @@
 #define MOTOR1_IN1_PIN 13
 #define MOTOR1_IN2_PIN 12
 
-#define MOTOR2_ENC_A_PIN 25
+#define MOTOR2_ENC_A_PIN 35
 #define MOTOR2_ENC_B_PIN 23
 #define MOTOR2_IN1_PIN 26
 #define MOTOR2_IN2_PIN 27
@@ -16,7 +16,7 @@
 #define MOTOR3_ENC_A_PIN 19
 #define MOTOR3_ENC_B_PIN 18
 #define MOTOR3_IN1_PIN 4
-#define MOTOR3_IN2_PIN 14
+#define MOTOR3_IN2_PIN 25
 
 #define LED_PIN 2
 
@@ -32,12 +32,13 @@ double pre_err = 0;
 void setup()
 {
   Wire.begin();
-  BMX055_Init();
 
   Serial.begin(115200);
   motor_[0].setup(0, MOTOR1_ENC_A_PIN, MOTOR1_ENC_B_PIN, MOTOR1_IN1_PIN, MOTOR1_IN2_PIN);
   motor_[1].setup(1, MOTOR2_ENC_A_PIN, MOTOR2_ENC_B_PIN, MOTOR2_IN1_PIN, MOTOR2_IN2_PIN);
   motor_[2].setup(2, MOTOR3_ENC_A_PIN, MOTOR3_ENC_B_PIN, MOTOR3_IN1_PIN, MOTOR3_IN2_PIN);
+
+  pinMode(LED_PIN, OUTPUT);
 
   delay(300);
 }
@@ -51,6 +52,8 @@ void output_time()
 
 void loop()
 {
+  digitalWrite(LED_PIN, HIGH);
+
   const unsigned long interval_ms = 50;
   unsigned long current_ms = millis();
   if (current_ms - previous_ms >= interval_ms)
@@ -59,22 +62,13 @@ void loop()
     output_time();
     
     for (int i = 0; i < MOTOR_NUM; i++) {
-      const int target_rpm = 30;
+      const int target_rpm = 20;
       motor_[i].calculate_rpm(interval_ms);
       const int cmd_val = pid_[i].calculate_pid(target_rpm, motor_[i].get_rpm(), interval_ms);
       motor_[i].cw_rotate_motor(cmd_val);
     }
 
     for (int i = 0; i < MOTOR_NUM; i++) { motor_[i].clear_encoder_value(); }
-
-    BMX055_Accl();
-    Serial.print("Accl= ");
-    Serial.print(xAccl);
-    Serial.print(",");
-    Serial.print(yAccl);
-    Serial.print(",");
-    Serial.print(zAccl);
-    Serial.println("");
 
     /*
     BMX055_Gyro();

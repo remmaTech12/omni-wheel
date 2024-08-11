@@ -2,6 +2,9 @@
 #include "./include/pid.hpp"
 #include "./include/motor.hpp"
 #include "./include/imu_bmx055.hpp"
+#include <Adafruit_Sensor.h>
+#include <Adafruit_BNO055.h>
+#include <utility/imumaths.h>
 
 #define MOTOR1_ENC_A_PIN 32
 #define MOTOR1_ENC_B_PIN 33
@@ -29,6 +32,8 @@ unsigned long previous_ms = 0;
 double i_err = 0;
 double pre_err = 0;
 
+Adafruit_BNO055 bno = Adafruit_BNO055(55, 0x28, &Wire);
+
 void setup()
 {
   Wire.begin();
@@ -40,14 +45,78 @@ void setup()
 
   pinMode(LED_PIN, OUTPUT);
 
+  /* Initialise the sensor */
+  if (!bno.begin())
+  {
+    /* There was a problem detecting the BNO055 ... check your connections */
+    Serial.print("Ooops, no BNO055 detected ... Check your wiring or I2C ADDR!");
+    while (1);
+  }
+
   delay(300);
 }
 
 void output_time()
 {
-  // Serial.print("Time: ");
   float time = millis() / 1000.0;
+  // Serial.print("Time: ");
   // Serial.println(time);
+}
+
+void printEvent(sensors_event_t* event) {
+  double x = -1000000, y = -1000000 , z = -1000000; //dumb values, easy to spot problem
+  if (event->type == SENSOR_TYPE_ACCELEROMETER) {
+    Serial.print("Accl:");
+    x = event->acceleration.x;
+    y = event->acceleration.y;
+    z = event->acceleration.z;
+  }
+  else if (event->type == SENSOR_TYPE_ORIENTATION) {
+    Serial.print("Orient:");
+    x = event->orientation.x;
+    y = event->orientation.y;
+    z = event->orientation.z;
+  }
+  else if (event->type == SENSOR_TYPE_MAGNETIC_FIELD) {
+    Serial.print("Mag:");
+    x = event->magnetic.x;
+    y = event->magnetic.y;
+    z = event->magnetic.z;
+  }
+  else if (event->type == SENSOR_TYPE_GYROSCOPE) {
+    Serial.print("Gyro:");
+    x = event->gyro.x;
+    y = event->gyro.y;
+    z = event->gyro.z;
+  }
+  else if (event->type == SENSOR_TYPE_ROTATION_VECTOR) {
+    Serial.print("Rot:");
+    x = event->gyro.x;
+    y = event->gyro.y;
+    z = event->gyro.z;
+  }
+  else if (event->type == SENSOR_TYPE_LINEAR_ACCELERATION) {
+    Serial.print("Linear:");
+    x = event->acceleration.x;
+    y = event->acceleration.y;
+    z = event->acceleration.z;
+  }
+  else if (event->type == SENSOR_TYPE_GRAVITY) {
+    Serial.print("Gravity:");
+    x = event->acceleration.x;
+    y = event->acceleration.y;
+    z = event->acceleration.z;
+  }
+  else {
+    Serial.print("Unk:");
+  }
+
+  Serial.print("\tx= ");
+  Serial.print(x);
+  Serial.print(" |\ty= ");
+  Serial.print(y);
+  Serial.print(" |\tz= ");
+  Serial.println(z);
 }
 
 void loop()
@@ -70,24 +139,14 @@ void loop()
 
     for (int i = 0; i < MOTOR_NUM; i++) { motor_[i].clear_encoder_value(); }
 
-    /*
-    BMX055_Gyro();
-    Serial.print("Gyro= ");
-    Serial.print(xGyro);
-    Serial.print(",");
-    Serial.print(yGyro);
-    Serial.print(",");
-    Serial.print(zGyro);
-    Serial.println("");
+    sensors_event_t angVelocityData, accelerometerData;
+    bno.getEvent(&angVelocityData, Adafruit_BNO055::VECTOR_GYROSCOPE);
+    bno.getEvent(&accelerometerData, Adafruit_BNO055::VECTOR_ACCELEROMETER);
 
-    BMX055_Mag();
-    Serial.print("Mag= ");
-    Serial.print(xMag);
-    Serial.print(",");
-    Serial.print(yMag);
-    Serial.print(",");
-    Serial.print(zMag);
-    Serial.println("");
-    */
+    printEvent(&angVelocityData);
+    printEvent(&accelerometerData);
+
+    uint8_t system, gyro, accel, mag = 0;
+    bno.getCalibration(&system, &gyro, &accel, &mag);
   }
 }

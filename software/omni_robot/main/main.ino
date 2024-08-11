@@ -22,6 +22,7 @@
 #define MOTOR3_IN2_PIN 25
 
 #define LED_PIN 2
+#define SW_PIN 34
 
 #define MOTOR_NUM 3
 
@@ -44,6 +45,7 @@ void setup()
   motor_[2].setup(2, MOTOR3_ENC_A_PIN, MOTOR3_ENC_B_PIN, MOTOR3_IN1_PIN, MOTOR3_IN2_PIN);
 
   pinMode(LED_PIN, OUTPUT);
+  pinMode(SW_PIN, INPUT);
 
   /* Initialise the sensor */
   if (!bno.begin())
@@ -121,7 +123,11 @@ void printEvent(sensors_event_t* event) {
 
 void loop()
 {
-  digitalWrite(LED_PIN, HIGH);
+  if (digitalRead(SW_PIN) == HIGH) {
+    digitalWrite(LED_PIN, HIGH);
+  } else {
+    digitalWrite(LED_PIN, LOW);
+  }
 
   const unsigned long interval_ms = 50;
   unsigned long current_ms = millis();

@@ -1,0 +1,31 @@
+Ref,Qnty,Value,Cmp name,Footprint,Description,Vendor
+"C1, C6, ",2,10uF,C,Capacitor_SMD:C_0603_1608Metric,Unpolarized capacitor,https://www.mouser.jp/ProductDetail/KYOCERA-AVX/0603ZW106MAT2A?qs=BZBei1rCqCDILT8BMORbpw%3D%3D
+"C2, C4, C5, C8, C9, C11, C12, C13, C14, C15, C16, C17, ",12,0.1uF,C,Capacitor_SMD:C_0603_1608Metric,Unpolarized capacitor,https://www.mouser.jp/ProductDetail/KYOCERA-AVX/KAM15AR71C104KM?qs=Jm2GQyTW%2FbjvjfiJhcHTCg%3D%3D
+"C3, ",1,22uF,C,Capacitor_SMD:C_0603_1608Metric,Unpolarized capacitor,https://www.mouser.jp/ProductDetail/KYOCERA-AVX/0603ZD226MAT2A?qs=sSYV1F9c5cE%2FKdrrBmQkqw%3D%3D
+"C7, ",1,4.7uF,C,Capacitor_SMD:C_0603_1608Metric,Unpolarized capacitor,https://www.mouser.jp/ProductDetail/KYOCERA-AVX/06036D475MAT2A?qs=G62aafFtBAdLQjkZwFspeQ%3D%3D
+"C10, ",1,6.8nF,C,Capacitor_SMD:C_0603_1608Metric,Unpolarized capacitor,https://www.mouser.jp/ProductDetail/Vishay-Vitramon/VJ0603Y682KXBAC31X?qs=sGAEpiMZZMsh%252B1woXyUXj5b5vGCCHxb%252B3J6Quj9FcJg%3D
+"D1, D2, ",2,LED,LED,Diode_SMD:D_0603_1608Metric,Light emitting diode,https://www.mouser.jp/ProductDetail/Bivar/SM0603URC?qs=hWDdE2Pc5RAmyCtviNtSxQ%3D%3D
+"D3, ",1,SP0503BAHT,SP0503BAHT,Package_TO_SOT_SMD:SOT-143,"TVS Diode Array, 5.5V Standoff, 3 Channels, SOT-143 package",https://www.mouser.jp/ProductDetail/Littelfuse/SP0503BAHTG?qs=uD%2FdkN7XIa0NTYXwHdELYA%3D%3D
+"D4, ",1,D_Schottky,D_Schottky,Diode_SMD:D_0603_1608Metric,Schottky diode,https://www.mouser.jp/ProductDetail/Comchip-Technology/CDBU70-HF?qs=2qJf6qQ4IOL3%2FIGqjls%252B4w%3D%3D
+"D5, ",1,1N4148W,1N4148W,Diode_SMD:D_SOD-123,"75V 0.15A Fast Switching Diode, SOD-123",https://www.mouser.jp/ProductDetail/Diotec-Semiconductor/1N4148W?qs=OlC7AqGiEDmsbkbAeXQtXg%3D%3D
+"J1, ",1,Conn_01x02_Male,Conn_01x02_Male,Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical,"Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)",
+"J2, ",1,USB_C_Receptacle_USB2.0,USB_C_Receptacle_USB2.0,Connector_USB:USB_C_Receptacle_Amphenol_12401610E4-2A,USB 2.0-only Type-C Receptacle connector,https://www.mouser.jp/ProductDetail/Amphenol-Commercial-Products/12401610E42A?qs=EgDjlb95zqAWvChv41w5lg%3D%3D
+"J3, J4, J5, ",3,Conn_01x06_Male,Conn_01x06_Male,Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical,"Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)",
+"Q1, Q2, ",2,SS8050-G,S8050,Package_TO_SOT_SMD:SOT-23,"0.7A Ic, 20V Vce, Low Voltage High Current NPN Transistor, TO-92",https://www.mouser.jp/ProductDetail/Comchip-Technology/SS8050-G?qs=sGAEpiMZZMvplms98TlKY0DRKkFioIw6yshKylp0VqvgzoQ7StxaEg%3D%3D
+"R1, R2, R4, R12, R15, R16, R17, R18, R19, R20, ",10,10kΩ,R,Resistor_SMD:R_0603_1608Metric,Resistor,https://www.mouser.jp/ProductDetail/Vishay-Beyschlag/MCT06030D1002BP500?qs=ncxkyCpAYDAJSzgYSRSsnA%3D%3D
+"R3, ",1,147Ω,R,Resistor_SMD:R_0603_1608Metric,Resistor,https://www.mouser.jp/ProductDetail/Vishay-Dale/CRCW0603147RFKTA?qs=sGAEpiMZZMtlubZbdhIBIFhyVsDsW4rVsTDNpacpLcg%3D
+"R5, ",1,5kΩ,R,Resistor_SMD:R_0603_1608Metric,Resistor,https://www.mouser.jp/ProductDetail/Vishay-BC-Components/NTCS0603E3502HLT?qs=doiCPypUmgFTmF9ZnhJHyQ%3D%3D
+"R6, ",1,100Ω,R,Resistor_SMD:R_0603_1608Metric,Resistor,https://www.mouser.jp/ProductDetail/Bourns/CR0603-JW-101ELF?qs=jAUlru4btJFOerhakJcyhQ%3D%3D
+"R7, ",1,22.1kΩ,R,Resistor_SMD:R_0603_1608Metric,Resistor,https://www.mouser.jp/ProductDetail/Vishay-Dale/TNPW060322K1BEEA?qs=sGAEpiMZZMtlubZbdhIBIOmxtv2GEc%2FVUvye4sdmKvQ%3D
+"R8, R10, ",2,5.1kΩ,R,Resistor_SMD:R_0603_1608Metric,Resistor,https://www.mouser.jp/ProductDetail/Vishay-Dale/CRCW06035K10FKEC?qs=sGAEpiMZZMtlubZbdhIBIKbhzOdzan%2FGt7ImYW9MzNM%3D
+"R9, ",1,47.5kΩ,R,Resistor_SMD:R_0603_1608Metric,Resistor,https://www.mouser.jp/ProductDetail/Vishay-Dale/CRCW060347K5FKEAHP?qs=sGAEpiMZZMtlubZbdhIBIJYhLflKW0MlmcMW%2FwDX6Do%3D
+"R11, ",1,2kΩ,R,Resistor_SMD:R_0603_1608Metric,Resistor,https://www.mouser.jp/ProductDetail/Vishay-Dale/TNPW06032K00DEEA?qs=ZPVAY1QZwKhoQnnDu3aK3Q%3D%3D
+"R13, R14, ",2,0Ω,R,Resistor_SMD:R_0603_1608Metric,Resistor,https://www.mouser.jp/ProductDetail/Vishay-Dale/CRCW06030000Z0ED?qs=sGAEpiMZZMukHu%252BjC5l7YbZJogKwR3uAeT9ZbDaanoY%3D
+"SW1, SW2, ",2,SW_Push,SW_Push,Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2,"Push button switch, generic, two pins",https://www.mouser.jp/ProductDetail/CK/KMR231NGLFS?qs=sb%252But3Lm4x1Y5NsXXdZx2g%3D%3D
+"SW3, ",1,SW_Push,SW_Push,Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm,"Push button switch, generic, two pins",https://www.mouser.jp/ProductDetail/Diptronics/DTSM-65N-V-B?qs=gTYE2QTfZfSXwXAGPNekUg%3D%3D
+"SW4, ",1,SW_SPDT,SW_SPDT,Button_Switch_THT:SW_Slide_1P2T_CK_OS102011MS2Q,"Switch, single pole double throw",https://www.mouser.jp/ProductDetail/CK/OS102011MS2QS1?qs=WtljUlYws5TrGs9OfHrZYw%3D%3D
+"U1, ",1,LT1963AxST-3.3,LT1963AxST-3.3,Package_TO_SOT_SMD:SOT-223-3_TabPin2,"3.3V, 1.5A, Low Noise, Fast Transient Response LDO Regulator, SOT-223",https://www.mouser.jp/ProductDetail/Analog-Devices/LT1963AEST-3.3PBF?qs=ytflclh7QUWACCdXyVJ5gA%3D%3D
+"U2, ",1,ESP32-WROVER-B,ESP32-WROVER-B,ESP32-WROVER-B:MODULE_ESP32-WROVER-B,,https://www.digikey.jp/ja/products/detail/espressif-systems/ESP32-WROVER-B-N8R8/9857843
+"U3, ",1,CP2102N-Axx-xQFN28,CP2102N-Axx-xQFN28,Package_DFN_QFN:QFN-28-1EP_5x5mm_P0.5mm_EP3.35x3.35mm,"USB to UART master bridge, QFN-28",https://www.mouser.jp/ProductDetail/Silicon-Labs/CP2102N-A02-GQFN28?qs=u16ybLDytRaSBkSkyjYFiA%3D%3D
+"U4, ",1,BNO055,BNO055,Package_LGA:LGA-28_5.2x3.8mm_P0.5mm,"Intelligent 9-axis absolute orientation sensor, LGA-28",https://www.mouser.jp/ProductDetail/Bosch-Sensortec/BNO055?qs=QhAb4EtQfbV8Z2YmISucWw%3D%3D
+"U5, U6, U7, ",3,DRV8837,DRV8837,Package_SON:WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm,"H-Bridge driver, 1.8A, Low Voltage, PWM input, WSON-8",https://www.mouser.jp/ProductDetail/Texas-Instruments/DRV8837DSGR?qs=l6ZoeTYLMwO0pKIJ8222Ww%3D%3D

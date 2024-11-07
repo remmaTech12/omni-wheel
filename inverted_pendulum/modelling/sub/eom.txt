@@ -1,0 +1,9 @@
+$$\left[\begin{matrix}m_{b} \ddot{x} + \frac{m_{p} \left(- l_{p} \sin{\left(\theta \right)} \dot{\theta}^{2} + l_{p} \cos{\left(\theta \right)} \ddot{\theta} + 2 \ddot{x}\right)}{2} + f_{1} \sin{\left(\alpha \right)} + f_{2} \sin{\left(\frac{2 \pi}{3} + \alpha \right)} + f_{3} \sin{\left(\frac{4 \pi}{3} + \alpha \right)}
+
+\\ m_{b} \ddot{y} + \frac{m_{p} \left(l_{p} \sin{\left(\phi \right)} \sin{\left(\theta \right)} \ddot{\theta} + l_{p} \sin{\left(\phi \right)} \cos{\left(\theta \right)} \dot{\phi}^{2} + l_{p} \sin{\left(\phi \right)} \cos{\left(\theta \right)} \dot{\theta}^{2} + 2 l_{p} \sin{\left(\theta \right)} \cos{\left(\phi \right)} \dot{\phi} \dot{\theta} - l_{p} \cos{\left(\phi \right)} \cos{\left(\theta \right)} \ddot{\phi} + 2 \ddot{y}\right)}{2} - f_{1} \cos{\left(\alpha \right)} - f_{2} \cos{\left(\frac{2 \pi}{3} + \alpha \right)} - f_{3} \cos{\left(\frac{4 \pi}{3} + \alpha \right)}
+
+\\ I_{bzz} \ddot{\alpha} \ - \ l_{b} f_{1} \ - \ l_{b} f_{2} \ - \ l_{b} f_{3}
+
+\\ \frac{l_{p} m_{p} \left(- 3 g \sin{\left(\phi \right)} - 4 l_{p} \sin{\left(\theta \right)} \dot{\phi} \dot{\theta} + 2 l_{p} \cos{\left(\theta \right)} \ddot{\phi} - 3 \cos{\left(\phi \right)} \ddot{y}\right) \cos{\left(\theta \right)}}{6}
+
+\\ \frac{l_{p} m_{p} \left(- 3 g \sin{\left(\theta \right)} \cos{\left(\phi \right)} + l_{p} \sin{\left(2 \theta \right)} \dot{\phi}^{2} + 2 l_{p} \ddot{\theta} + 3 \sin{\left(\phi \right)} \sin{\left(\theta \right)} \ddot{y} + 3 \cos{\left(\theta \right)} \ddot{x}\right)}{6}\end{matrix}\right]$$

@@ -1,0 +1,64 @@
+### Module positions - created on 2024年11月30日 20時54分14秒 ###
+### Printed by Pcbnew version 6.0.2+dfsg-1
+## Unit = mm, Angle = deg.
+## Side : All
+# Ref     Val                      Package                                       PosX       PosY       Rot  Side
+C12       0.1uF                    C_0603_1608Metric                         -58.9319    58.4502  -150.0000  bottom
+C13       0.1uF                    C_0603_1608Metric                         -65.8656    46.4608  -150.0000  bottom
+C14       0.1uF                    C_0603_1608Metric                         -41.1646    30.0318  -90.0000  bottom
+C15       0.1uF                    C_0603_1608Metric                         -54.7246    29.9818  -90.0000  bottom
+C16       0.1uF                    C_0603_1608Metric                         -35.9126    57.4701  150.0000  bottom
+C17       0.1uF                    C_0603_1608Metric                         -30.9526    49.1301  150.0000  bottom
+U5        DRV8837                  WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm       -62.3869    52.4660  120.0000  bottom
+U6        DRV8837                  WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm       -48.0446    30.0018  180.0000  bottom
+U7        DRV8837                  WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm       -33.3726    53.3001   60.0000  bottom
+C1        10uF                     C_0603_1608Metric                          82.7526    29.8401    0.0000  top
+C2        0.1uF                    C_0603_1608Metric                          72.2053    30.5193  -90.0000  top
+C3        22uF                     C_0603_1608Metric                          75.2053    30.5193  -90.0000  top
+C4        0.1uF                    C_0603_1608Metric                          72.1826    23.0601  180.0000  top
+C5        0.1uF                    C_0603_1608Metric                          72.0826    17.1201    0.0000  top
+C6        10uF                     C_0603_1608Metric                          75.3851    39.8601    0.0000  top
+C7        4.7uF                    C_0603_1608Metric                          33.2711    25.5386  120.0000  top
+C8        0.1uF                    C_0603_1608Metric                          30.6211    24.0086  120.0000  top
+C9        0.1uF                    C_0603_1608Metric                          45.6626    49.1401   90.0000  top
+C10       6.8nF                    C_0603_1608Metric                          51.5926    49.2001   90.0000  top
+C11       0.1uF                    C_0603_1608Metric                          49.2226    38.6413  -90.0000  top
+D1        LED                      D_0603_1608Metric                          75.4351    37.6101  180.0000  top
+D2        LED                      D_0603_1608Metric                          60.1953    67.8003  180.0000  top
+D3        SP0503BAHT               SOT-143                                    24.4869    29.9933   30.0000  top
+D4        D_Schottky               D_0603_1608Metric                          18.8254    15.3393   30.0000  top
+J1        Conn_01x02_Male          PinSocket_1x02_P2.54mm_Vertical            83.4053    23.9103  150.0000  top
+J2        USB_C_Receptacle_USB2.0  USB_C_Receptacle_Amphenol_12401610E4-2A    16.3301    25.3103  -60.0000  top
+J3        Conn_01x06_Male          PinHeader_1x06_P2.54mm_Vertical            55.5776    55.8090   30.0000  top
+J4        Conn_01x06_Male          PinHeader_1x06_P2.54mm_Vertical            54.4526    33.9297  -90.0000  top
+J5        Conn_01x06_Male          PinHeader_1x06_P2.54mm_Vertical            35.3976    44.4904  150.0000  top
+Q1        SS8050-G                 SOT-23                                     72.2126    25.7901    0.0000  top
+Q2        SS8050-G                 SOT-23                                     72.1226    19.8201    0.0000  top
+R1        10kΩ                    R_0603_1608Metric                          67.1026    23.9001   90.0000  top
+R2        10kΩ                    R_0603_1608Metric                          64.1426    23.9001  -90.0000  top
+R3        147Ω                    R_0603_1608Metric                          75.4551    35.4501    0.0000  top
+R4        10kΩ                    R_0603_1608Metric                          78.2053    30.5193   90.0000  top
+R5        5kΩ                     R_0603_1608Metric                          35.4226    74.1997    0.0000  top
+R6        100Ω                    R_0603_1608Metric                          60.1953    64.8003    0.0000  top
+R7        22.1kΩ                  R_0603_1608Metric                          25.1123    21.4401  -150.0000  top
+R8        5.1kΩ                   R_0603_1608Metric                          17.4995    17.5760   30.0000  top
+R9        47.5kΩ                  R_0603_1608Metric                          28.2129    26.6597  -150.0000  top
+R10       5.1kΩ                   R_0603_1608Metric                          22.8786    32.6790  -150.0000  top
+R11       2kΩ                     R_0603_1608Metric                          31.5085    28.6317  120.0000  top
+R12       10kΩ                    R_0603_1608Metric                          34.3072    30.1841  -60.0000  top
+R13       0Ω                      R_0603_1608Metric                          24.3467    38.0761  120.0000  top
+R14       0Ω                      R_0603_1608Metric                          27.2826    39.7711  120.0000  top
+R15       10kΩ                    R_0603_1608Metric                          55.7426    45.8601  -90.0000  top
+R16       10kΩ                    R_0603_1608Metric                          48.5826    49.1501   90.0000  top
+R17       10kΩ                    R_0603_1608Metric                          51.9226    38.6212  -90.0000  top
+R18       10kΩ                    R_0603_1608Metric                          53.1526    43.3201   90.0000  top
+R19       10kΩ                    R_0603_1608Metric                          46.2826    38.6512  -90.0000  top
+R20       10kΩ                    R_0603_1608Metric                          43.6026    38.6512  -90.0000  top
+SW1       SW_Push                  SW_Push_1P1T_NO_CK_KMR2                    77.6053    24.9203    0.0000  top
+SW2       SW_Push                  SW_Push_1P1T_NO_CK_KMR2                    77.6053    19.0293    0.0000  top
+SW3       SW_Push                  SW_Push_1P1T_NO_6x6mm_H9.5mm               33.6926    80.2997   90.0000  top
+U1        LT1963AxST-3.3           SOT-223-3_TabPin2                          84.4953    36.9103    0.0000  top
+U2        ESP32-WROVER-B           MODULE_ESP32-WROVER-B                      48.2053    77.3103    0.0000  top
+U3        CP2102N-Axx-xQFN28       QFN-28-1EP_5x5mm_P0.5mm_EP3.35x3.35mm      28.4526    33.5646   30.0000  top
+U4        BNO055                   LGA-28_5.2x3.8mm_P0.5mm                    48.2053    44.3103    0.0000  top
+## End

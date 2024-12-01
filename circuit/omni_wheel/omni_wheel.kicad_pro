@@ -120,8 +120,6 @@
       },
       "track_widths": [
         0.0,
-        0.03,
-        0.1,
         0.25,
         0.5
       ],
@@ -383,7 +381,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "omni_wheel.net",
-      "specctra_dsn": "",
+      "specctra_dsn": "omni_wheel.dsn",
       "step": "",
       "vrml": ""
     },

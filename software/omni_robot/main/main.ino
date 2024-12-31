@@ -124,9 +124,9 @@ void printEvent(sensors_event_t* event) {
 void loop()
 {
   if (digitalRead(SW_PIN) == HIGH) {
-    digitalWrite(LED_PIN, HIGH);
-  } else {
     digitalWrite(LED_PIN, LOW);
+  } else {
+    digitalWrite(LED_PIN, HIGH);
   }
 
   const unsigned long interval_ms = 50;
@@ -135,12 +135,19 @@ void loop()
   {
     previous_ms = current_ms;
     output_time();
-    
-    for (int i = 0; i < MOTOR_NUM; i++) {
-      const int target_rpm = 20;
-      motor_[i].calculate_rpm(interval_ms);
-      const int cmd_val = pid_[i].calculate_pid(target_rpm, motor_[i].get_rpm(), interval_ms);
-      motor_[i].cw_rotate_motor(cmd_val);
+
+    if (digitalRead(SW_PIN) == HIGH) {
+      for (int i = 0; i < MOTOR_NUM; i++) {
+        const int target_rpm = 100;
+        motor_[i].calculate_rpm(interval_ms);
+        const int cmd_val =
+            pid_[i].calculate_pid(target_rpm, motor_[i].get_rpm(), interval_ms);
+        motor_[i].cw_rotate_motor(cmd_val);
+      }
+    } else {
+      for (int i = 0; i < MOTOR_NUM; i++) {
+        motor_[i].cw_rotate_motor(0);
+      }
     }
 
     for (int i = 0; i < MOTOR_NUM; i++) { motor_[i].clear_encoder_value(); }

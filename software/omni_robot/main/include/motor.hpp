@@ -63,13 +63,13 @@ class Motor {
     // move motor
     void cw_rotate_motor(int speed)
     {
-      analogWrite(motor_pin_A1_, speed);
-      analogWrite(motor_pin_A2_, 0);
+      analogWrite(motor_pin_A1_, 0);
+      analogWrite(motor_pin_A2_, speed);
     }
     void ccw_rotate_motor(int speed)
     {
-      analogWrite(motor_pin_A1_, 0);
-      analogWrite(motor_pin_A2_, speed);
+      analogWrite(motor_pin_A1_, speed);
+      analogWrite(motor_pin_A2_, 0);
     }
     void brake_motor()
     {

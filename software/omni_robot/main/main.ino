@@ -234,16 +234,16 @@ void down_motion()
 
 void left_motion()
 {
-  motor_[0].ccw_rotate_motor(255);
+  motor_[0].ccw_rotate_motor(147);
   motor_[1].cw_rotate_motor(255);
-  motor_[2].ccw_rotate_motor(255);
+  motor_[2].ccw_rotate_motor(147);
 }
 
 void right_motion()
 {
-  motor_[0].cw_rotate_motor(255);
+  motor_[0].cw_rotate_motor(147);
   motor_[1].ccw_rotate_motor(255);
-  motor_[2].cw_rotate_motor(255);
+  motor_[2].cw_rotate_motor(147);
 }
 
 void ccw_motion()

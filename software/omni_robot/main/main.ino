@@ -5,6 +5,7 @@
 #include <Adafruit_Sensor.h>
 #include <Adafruit_BNO055.h>
 #include <utility/imumaths.h>
+#include "BluetoothSerial.h"
 
 #define MOTOR1_ENC_A_PIN 32
 #define MOTOR1_ENC_B_PIN 33
@@ -35,6 +36,8 @@ double pre_err = 0;
 
 Adafruit_BNO055 bno = Adafruit_BNO055(55, 0x28, &Wire);
 
+BluetoothSerial SerialBT;
+
 void setup()
 {
   Wire.begin();
@@ -47,15 +50,30 @@ void setup()
   pinMode(LED_PIN, OUTPUT);
   pinMode(SW_PIN, INPUT);
 
-  /* Initialise the sensor */
+  // Initialise the sensor
   if (!bno.begin())
   {
-    /* There was a problem detecting the BNO055 ... check your connections */
+    // There was a problem detecting the BNO055 ... check your connections 
     Serial.print("Ooops, no BNO055 detected ... Check your wiring or I2C ADDR!");
     while (1);
   }
 
+  SerialBT.begin("ESP32test");  // Bluetooth device name
+  Serial.println("The device started, now you can pair it with bluetooth!");
+  notify_bluetooth_setup_finished();
+
   delay(300);
+}
+
+void notify_bluetooth_setup_finished() {
+    pinMode(LED_PIN, OUTPUT);
+    char blink_times = 3;
+    for (int i = 0; i < blink_times; i++) {
+        digitalWrite(LED_PIN, HIGH);
+        delay(50);
+        digitalWrite(LED_PIN, LOW);
+        delay(50);
+    }
 }
 
 void output_time()
@@ -123,11 +141,29 @@ void printEvent(sensors_event_t* event) {
 
 void loop()
 {
+  uint8_t recv_data[2];
+  if (SerialBT.available()) {
+    SerialBT.readBytes(recv_data, 2);
+    
+    if (recv_data[0] == 'T') {
+      if (recv_data[1] != 0) {
+        digitalWrite(LED_PIN, HIGH);
+      } else {
+        digitalWrite(LED_PIN, LOW);
+      }
+    }
+    else {
+      digitalWrite(LED_PIN, LOW);
+    }
+  }
+
+  /*
   if (digitalRead(SW_PIN) == HIGH) {
     digitalWrite(LED_PIN, LOW);
   } else {
     digitalWrite(LED_PIN, HIGH);
   }
+  */
 
   const unsigned long interval_ms = 50;
   unsigned long current_ms = millis();

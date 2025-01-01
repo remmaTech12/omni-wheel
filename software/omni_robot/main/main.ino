@@ -184,10 +184,22 @@ void loop()
     }
   }
 
-  if (recv_data[0] == 'T' && (recv_data[1] & 0b00000001 == 1)) {
+  if (recv_data[0] == 'T' && (recv_data[1] & 1)) {
     upper_motion();
   }
-  if (recv_data[0] == 'T' && (recv_data[1] & 0b00100000 == 1)) {
+  else if (recv_data[0] == 'T' && (recv_data[1] & (1 << 1))) {
+    down_motion();
+  }
+  else if (recv_data[0] == 'T' && (recv_data[1] & (1 << 2))) {
+    left_motion();
+  }
+  else if (recv_data[0] == 'T' && (recv_data[1] & (1 << 3))) {
+    right_motion();
+  }
+  else if (recv_data[0] == 'T' && (recv_data[1] & (1 << 4))) {
+    ccw_motion();
+  }
+  else if (recv_data[0] == 'T' && (recv_data[1] & (1 << 5))) {
     cw_motion();
   }
 
@@ -211,6 +223,34 @@ void upper_motion()
   motor_[0].ccw_rotate_motor(255);
   motor_[1].stop_motor();
   motor_[2].cw_rotate_motor(255);
+}
+
+void down_motion()
+{
+  motor_[0].cw_rotate_motor(255);
+  motor_[1].stop_motor();
+  motor_[2].ccw_rotate_motor(255);
+}
+
+void left_motion()
+{
+  motor_[0].ccw_rotate_motor(255);
+  motor_[1].cw_rotate_motor(255);
+  motor_[2].ccw_rotate_motor(255);
+}
+
+void right_motion()
+{
+  motor_[0].cw_rotate_motor(255);
+  motor_[1].ccw_rotate_motor(255);
+  motor_[2].cw_rotate_motor(255);
+}
+
+void ccw_motion()
+{
+  motor_[0].ccw_rotate_motor(255);
+  motor_[1].ccw_rotate_motor(255);
+  motor_[2].ccw_rotate_motor(255);
 }
 
 void cw_motion()

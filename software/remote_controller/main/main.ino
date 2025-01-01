@@ -3,8 +3,8 @@
 #define LED_DEBUG 23
 #define LED_BUILTIN 2
 #define SWITCH_UPPER 33
-#define SWITCH_DOWN  34
-#define SWITCH_LEFT  25
+#define SWITCH_DOWN  25
+#define SWITCH_LEFT  34
 #define SWITCH_RIGHT 26
 #define SWITCH_CCW 27
 #define SWITCH_CW  14

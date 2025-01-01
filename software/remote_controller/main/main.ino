@@ -33,7 +33,7 @@ void setup() {
   pinMode(SWITCH_OPT2, INPUT);
 
   bluetooth_setup();
-  notify_bluetooth_setup_finished();
+  blink_led();
 }
 
 void printPressedSwitch(int pin, String pin_str) {
@@ -48,22 +48,24 @@ void printPressedSwitch(int pin, String pin_str) {
 void loop() {
   const unsigned long interval_ms = 50;
   unsigned long current_ms = millis();
-  if (current_ms - previous_ms >= interval_ms)
-  {
-    previous_ms = current_ms;
 
-    digitalWrite(LED_DEBUG, LOW);  // turn the LED off
-    printPressedSwitch(SWITCH_UPPER, "Upper");
-    printPressedSwitch(SWITCH_DOWN, "Down");
-    printPressedSwitch(SWITCH_LEFT, "Left");
-    printPressedSwitch(SWITCH_RIGHT, "Right");
-    printPressedSwitch(SWITCH_CCW, "CCW");
-    printPressedSwitch(SWITCH_CW, "CW");
-    printPressedSwitch(SWITCH_OPT1, "Opt1");
-    printPressedSwitch(SWITCH_OPT2, "Opt2");
+  if (current_ms - previous_ms < interval_ms) return;
 
-    transmit_data();
-  }
+  previous_ms = current_ms;
+  digitalWrite(LED_DEBUG, LOW);  // turn the LED off
+  debug_print();
+  transmit_data();
+}
+
+void debug_print() {
+  printPressedSwitch(SWITCH_UPPER, "Upper");
+  printPressedSwitch(SWITCH_DOWN, "Down");
+  printPressedSwitch(SWITCH_LEFT, "Left");
+  printPressedSwitch(SWITCH_RIGHT, "Right");
+  printPressedSwitch(SWITCH_CCW, "CCW");
+  printPressedSwitch(SWITCH_CW, "CW");
+  printPressedSwitch(SWITCH_OPT1, "Opt1");
+  printPressedSwitch(SWITCH_OPT2, "Opt2");
 }
 
 void bluetooth_setup() {
@@ -72,7 +74,7 @@ void bluetooth_setup() {
 
     // uint8_t address[6] = {0x8C, 0x4B, 0x14, 0x2A, 0x6F, 0xB8};
     // bool connected = SerialBT.connect(address);
-    bool connected = SerialBT.connect("ESP32test");
+    bool connected = SerialBT.connect("ESP32_omni_robot");
     if (connected) {
         Serial.println("Connected Succesfully!");
     } else {
@@ -88,7 +90,7 @@ void bluetooth_setup() {
     SerialBT.connect();
 }
 
-void notify_bluetooth_setup_finished() {
+void blink_led() {
     pinMode(LED_BUILTIN, OUTPUT);
     for (int i = 0; i < 3; i++) {
         digitalWrite(LED_BUILTIN, HIGH);

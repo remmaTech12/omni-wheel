@@ -58,22 +58,22 @@ void setup()
     while (1);
   }
 
-  SerialBT.begin("ESP32test");  // Bluetooth device name
+  SerialBT.begin("ESP32_omni_robot");  // Bluetooth device name
   Serial.println("The device started, now you can pair it with bluetooth!");
-  notify_bluetooth_setup_finished();
+  blink_led();
 
   delay(300);
 }
 
-void notify_bluetooth_setup_finished() {
-    pinMode(LED_PIN, OUTPUT);
-    char blink_times = 3;
-    for (int i = 0; i < blink_times; i++) {
-        digitalWrite(LED_PIN, HIGH);
-        delay(50);
-        digitalWrite(LED_PIN, LOW);
-        delay(50);
-    }
+void blink_led() {
+  pinMode(LED_PIN, OUTPUT);
+  char blink_times = 3;
+  for (int i = 0; i < blink_times; i++) {
+    digitalWrite(LED_PIN, HIGH);
+    delay(50);
+    digitalWrite(LED_PIN, LOW);
+    delay(50);
+  }
 }
 
 void output_time()
@@ -141,61 +141,81 @@ void printEvent(sensors_event_t* event) {
 
 void loop()
 {
+  const unsigned long interval_ms = 50;
+  unsigned long current_ms = millis();
+  if (current_ms - previous_ms < interval_ms) return;
+
+  previous_ms = current_ms;
+  output_time();
+
+  bool remote_button_pressed  = false;
+  bool buildin_button_pressed = false;
+
   uint8_t recv_data[2];
   if (SerialBT.available()) {
     SerialBT.readBytes(recv_data, 2);
     
-    if (recv_data[0] == 'T') {
-      if (recv_data[1] != 0) {
-        digitalWrite(LED_PIN, HIGH);
-      } else {
-        digitalWrite(LED_PIN, LOW);
-      }
-    }
-    else {
-      digitalWrite(LED_PIN, LOW);
+    if (recv_data[0] == 'T' && recv_data[1] != 0) {
+      remote_button_pressed = true;
     }
   }
 
-  /*
   if (digitalRead(SW_PIN) == HIGH) {
-    digitalWrite(LED_PIN, LOW);
-  } else {
+    buildin_button_pressed = true;
+  }
+
+  if (remote_button_pressed || buildin_button_pressed) {
     digitalWrite(LED_PIN, HIGH);
+  } else {
+    digitalWrite(LED_PIN, LOW);
   }
-  */
 
-  const unsigned long interval_ms = 50;
-  unsigned long current_ms = millis();
-  if (current_ms - previous_ms >= interval_ms)
-  {
-    previous_ms = current_ms;
-    output_time();
-
-    if (digitalRead(SW_PIN) == HIGH) {
-      for (int i = 0; i < MOTOR_NUM; i++) {
-        const int target_rpm = 100;
-        motor_[i].calculate_rpm(interval_ms);
-        const int cmd_val =
-            pid_[i].calculate_pid(target_rpm, motor_[i].get_rpm(), interval_ms);
-        motor_[i].cw_rotate_motor(cmd_val);
-      }
-    } else {
-      for (int i = 0; i < MOTOR_NUM; i++) {
-        motor_[i].cw_rotate_motor(0);
-      }
+  if (digitalRead(SW_PIN) == HIGH) {
+    for (int i = 0; i < MOTOR_NUM; i++) {
+      const int target_rpm = 100;
+      motor_[i].calculate_rpm(interval_ms);
+      const int cmd_val =
+          pid_[i].calculate_pid(target_rpm, motor_[i].get_rpm(), interval_ms);
+      motor_[i].cw_rotate_motor(cmd_val);
     }
-
-    for (int i = 0; i < MOTOR_NUM; i++) { motor_[i].clear_encoder_value(); }
-
-    sensors_event_t angVelocityData, accelerometerData;
-    bno.getEvent(&angVelocityData, Adafruit_BNO055::VECTOR_GYROSCOPE);
-    bno.getEvent(&accelerometerData, Adafruit_BNO055::VECTOR_ACCELEROMETER);
-
-    printEvent(&angVelocityData);
-    printEvent(&accelerometerData);
-
-    uint8_t system, gyro, accel, mag = 0;
-    bno.getCalibration(&system, &gyro, &accel, &mag);
+  } else {
+    for (int i = 0; i < MOTOR_NUM; i++) {
+      motor_[i].cw_rotate_motor(0);
+    }
   }
+
+  if (recv_data[0] == 'T' && (recv_data[1] & 0b00000001 == 1)) {
+    upper_motion();
+  }
+  if (recv_data[0] == 'T' && (recv_data[1] & 0b00100000 == 1)) {
+    cw_motion();
+  }
+
+  for (int i = 0; i < MOTOR_NUM; i++) {
+    motor_[i].clear_encoder_value();
+  }
+
+  sensors_event_t angVelocityData, accelerometerData;
+  bno.getEvent(&angVelocityData, Adafruit_BNO055::VECTOR_GYROSCOPE);
+  bno.getEvent(&accelerometerData, Adafruit_BNO055::VECTOR_ACCELEROMETER);
+
+  printEvent(&angVelocityData);
+  printEvent(&accelerometerData);
+
+  uint8_t system, gyro, accel, mag = 0;
+  bno.getCalibration(&system, &gyro, &accel, &mag);
+}
+
+void upper_motion()
+{
+  motor_[0].ccw_rotate_motor(255);
+  motor_[1].stop_motor();
+  motor_[2].cw_rotate_motor(255);
+}
+
+void cw_motion()
+{
+  motor_[0].cw_rotate_motor(255);
+  motor_[1].cw_rotate_motor(255);
+  motor_[2].cw_rotate_motor(255);
 }

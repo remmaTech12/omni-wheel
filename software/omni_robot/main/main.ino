@@ -2,6 +2,7 @@
 #include "./include/motor.hpp"
 #include "./include/pid.hpp"
 #include "./include/pin_allocation.hpp"
+#include "./include/util.hpp"
 #include <Wire.h>
 #include <Adafruit_Sensor.h>
 #include <Adafruit_BNO055.h>
@@ -12,6 +13,7 @@
 
 PID pid_[3];
 Motor motor_[3];
+Util util;
 
 unsigned long previous_ms = 0;
 
@@ -31,7 +33,6 @@ void setup()
   motor_[0].setup(0, MOTOR1_ENC_A_PIN, MOTOR1_ENC_B_PIN, MOTOR1_IN1_PIN, MOTOR1_IN2_PIN);
   motor_[1].setup(1, MOTOR2_ENC_A_PIN, MOTOR2_ENC_B_PIN, MOTOR2_IN1_PIN, MOTOR2_IN2_PIN);
   motor_[2].setup(2, MOTOR3_ENC_A_PIN, MOTOR3_ENC_B_PIN, MOTOR3_IN1_PIN, MOTOR3_IN2_PIN);
-
   pinMode(LED_PIN, OUTPUT);
   pinMode(SW_PIN, INPUT);
 
@@ -45,83 +46,9 @@ void setup()
 
   SerialBT.begin("ESP32_omni_robot");  // Bluetooth device name
   Serial.println("The device started, now you can pair it with bluetooth!");
-  blink_led();
+  util.blink_led();
 
   delay(300);
-}
-
-void blink_led() {
-  pinMode(LED_PIN, OUTPUT);
-  char blink_times = 3;
-  for (int i = 0; i < blink_times; i++) {
-    digitalWrite(LED_PIN, HIGH);
-    delay(50);
-    digitalWrite(LED_PIN, LOW);
-    delay(50);
-  }
-}
-
-void output_time()
-{
-  float time = millis() / 1000.0;
-}
-
-void printEvent(sensors_event_t* event) {
-  double x = -1000000, y = -1000000 , z = -1000000; //dumb values, easy to spot problem
-  if (event->type == SENSOR_TYPE_ACCELEROMETER) {
-    Serial.print("Accl:");
-    x = event->acceleration.x;
-    y = event->acceleration.y;
-    z = event->acceleration.z;
-    accel_z = z;
-  }
-  else if (event->type == SENSOR_TYPE_ORIENTATION) {
-    Serial.print("Orient:");
-    x = event->orientation.x;
-    y = event->orientation.y;
-    z = event->orientation.z;
-  }
-  else if (event->type == SENSOR_TYPE_MAGNETIC_FIELD) {
-    Serial.print("Mag:");
-    x = event->magnetic.x;
-    y = event->magnetic.y;
-    z = event->magnetic.z;
-  }
-  else if (event->type == SENSOR_TYPE_GYROSCOPE) {
-    Serial.print("Gyro:");
-    x = event->gyro.x;
-    y = event->gyro.y;
-    z = event->gyro.z;
-    gyro_y = y;
-  }
-  else if (event->type == SENSOR_TYPE_ROTATION_VECTOR) {
-    Serial.print("Rot:");
-    x = event->gyro.x;
-    y = event->gyro.y;
-    z = event->gyro.z;
-  }
-  else if (event->type == SENSOR_TYPE_LINEAR_ACCELERATION) {
-    Serial.print("Linear:");
-    x = event->acceleration.x;
-    y = event->acceleration.y;
-    z = event->acceleration.z;
-  }
-  else if (event->type == SENSOR_TYPE_GRAVITY) {
-    Serial.print("Gravity:");
-    x = event->acceleration.x;
-    y = event->acceleration.y;
-    z = event->acceleration.z;
-  }
-  else {
-    Serial.print("Unknown data type:");
-  }
-
-  Serial.print("\tx= ");
-  Serial.print(x);
-  Serial.print(" |\ty= ");
-  Serial.println(y);
-  Serial.print(" |\tz= ");
-  Serial.println(z);
 }
 
 void loop()
@@ -131,7 +58,6 @@ void loop()
   if (current_ms - previous_ms < interval_ms) return;
 
   previous_ms = current_ms;
-  output_time();
 
   bool remote_button_pressed  = false;
   bool buildin_button_pressed = false;
@@ -210,6 +136,7 @@ void loop()
   bno.getEvent(&accelerometerData, Adafruit_BNO055::VECTOR_ACCELEROMETER);
   gyro_y = angVelocityData.gyro.y;
   accel_z = accelerometerData.acceleration.z;
+  // util.printEvent(&angVelocityData);
 
   uint8_t system, gyro, accel, mag = 0;
   bno.getCalibration(&system, &gyro, &accel, &mag);

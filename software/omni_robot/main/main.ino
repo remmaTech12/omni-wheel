@@ -184,25 +184,26 @@ void loop()
       motor_[2].ccw_rotate_motor(abs_cmd_val);
     }
   }
+  else {
+    if (recv_data[0] == 'T' && (recv_data[1] & 1)) {
+      upper_motion();
+    } else if (recv_data[0] == 'T' && (recv_data[1] & (1 << 1))) {
+      down_motion();
+    } else if (recv_data[0] == 'T' && (recv_data[1] & (1 << 2))) {
+      left_motion();
+    } else if (recv_data[0] == 'T' && (recv_data[1] & (1 << 3))) {
+      right_motion();
+    } else if (recv_data[0] == 'T' && (recv_data[1] & (1 << 4))) {
+      ccw_motion();
+    } else if (recv_data[0] == 'T' && (recv_data[1] & (1 << 5))) {
+      cw_motion();
+    } else {
+      motor_[0].stop_motor();
+      motor_[1].stop_motor();
+      motor_[2].stop_motor();
+    }
+  }
 
-  if (recv_data[0] == 'T' && (recv_data[1] & 1)) {
-    upper_motion();
-  }
-  else if (recv_data[0] == 'T' && (recv_data[1] & (1 << 1))) {
-    down_motion();
-  }
-  else if (recv_data[0] == 'T' && (recv_data[1] & (1 << 2))) {
-    left_motion();
-  }
-  else if (recv_data[0] == 'T' && (recv_data[1] & (1 << 3))) {
-    right_motion();
-  }
-  else if (recv_data[0] == 'T' && (recv_data[1] & (1 << 4))) {
-    ccw_motion();
-  }
-  else if (recv_data[0] == 'T' && (recv_data[1] & (1 << 5))) {
-    cw_motion();
-  }
 
   for (int i = 0; i < MOTOR_NUM; i++) {
     motor_[i].clear_encoder_value();

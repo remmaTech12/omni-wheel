@@ -27,25 +27,31 @@ BluetoothSerial SerialBT;
 
 void setup()
 {
+  // serial communication 
   Wire.begin();
-
   Serial.begin(115200);
+
+  // motor
   motor_[0].setup(0, MOTOR1_ENC_A_PIN, MOTOR1_ENC_B_PIN, MOTOR1_IN1_PIN, MOTOR1_IN2_PIN);
   motor_[1].setup(1, MOTOR2_ENC_A_PIN, MOTOR2_ENC_B_PIN, MOTOR2_IN1_PIN, MOTOR2_IN2_PIN);
   motor_[2].setup(2, MOTOR3_ENC_A_PIN, MOTOR3_ENC_B_PIN, MOTOR3_IN1_PIN, MOTOR3_IN2_PIN);
+
+  // other pins
   pinMode(LED_PIN, OUTPUT);
   pinMode(SW_PIN, INPUT);
 
-  // Initialise the sensor
+  // initialize bno055
   if (!bno.begin())
   {
-    // There was a problem detecting the BNO055 ... check your connections 
     Serial.print("Ooops, no BNO055 detected ... Check your wiring or I2C ADDR!");
     while (1);
   }
 
+  // bluetooth
   SerialBT.begin("ESP32_omni_robot");  // Bluetooth device name
   Serial.println("The device started, now you can pair it with bluetooth!");
+
+  // notification
   util.blink_led();
 
   delay(300);

@@ -23,7 +23,7 @@ unsigned long previous_ms = 0;
 
 void setup()
 {
-  // serial communication 
+  // serial communication
   Wire.begin();
   Serial.begin(115200);
 

@@ -12,8 +12,7 @@
 
 #define MOTOR_NUM 3
 
-PID pid_[3];
-Motor motor_[3];
+Motor motor[3];
 Util util;
 BodyControl body_control;
 
@@ -29,10 +28,10 @@ void setup()
   Serial.begin(115200);
 
   // motor
-  motor_[0].setup(0, MOTOR1_ENC_A_PIN, MOTOR1_ENC_B_PIN, MOTOR1_IN1_PIN, MOTOR1_IN2_PIN);
-  motor_[1].setup(1, MOTOR2_ENC_A_PIN, MOTOR2_ENC_B_PIN, MOTOR2_IN1_PIN, MOTOR2_IN2_PIN);
-  motor_[2].setup(2, MOTOR3_ENC_A_PIN, MOTOR3_ENC_B_PIN, MOTOR3_IN1_PIN, MOTOR3_IN2_PIN);
-  body_control.setup(motor_, MOTOR_NUM);
+  motor[0].setup(0, MOTOR1_ENC_A_PIN, MOTOR1_ENC_B_PIN, MOTOR1_IN1_PIN, MOTOR1_IN2_PIN);
+  motor[1].setup(1, MOTOR2_ENC_A_PIN, MOTOR2_ENC_B_PIN, MOTOR2_IN1_PIN, MOTOR2_IN2_PIN);
+  motor[2].setup(2, MOTOR3_ENC_A_PIN, MOTOR3_ENC_B_PIN, MOTOR3_IN1_PIN, MOTOR3_IN2_PIN);
+  body_control.setup(motor, MOTOR_NUM);
 
   // other pins
   pinMode(LED_PIN, OUTPUT);
@@ -77,9 +76,9 @@ void loop()
   }
 
   // imu
-  sensors_event_t angVelocityData, accelerometerData;
-  bno.getEvent(&angVelocityData, Adafruit_BNO055::VECTOR_GYROSCOPE);
+  sensors_event_t accelerometerData, angVelocityData;
   bno.getEvent(&accelerometerData, Adafruit_BNO055::VECTOR_ACCELEROMETER);
+  bno.getEvent(&angVelocityData, Adafruit_BNO055::VECTOR_GYROSCOPE);
   double accel_z = accelerometerData.acceleration.z;
   double gyro_y = angVelocityData.gyro.y;
   // util.printEvent(&angVelocityData);
@@ -87,7 +86,7 @@ void loop()
   bno.getCalibration(&system, &gyro, &accel, &mag);
 
   // control
-  body_control.control_mode_change();
+  body_control.switch_control_mode();
   if (body_control.is_inverted_pendulum_mode()) {
     body_control.inverted_pendulum_control(accel_z, gyro_y);
   } else {

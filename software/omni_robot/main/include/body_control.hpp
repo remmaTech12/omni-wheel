@@ -59,7 +59,7 @@ class BodyControl {
     }
   }
 
-  void control_mode_change() {
+  void switch_control_mode() {
     if (util_.is_builtin_button_pressed() && last_button_pressed_ms_ + 1000 < millis()) {
       is_inverted_pendulum_mode_ = !is_inverted_pendulum_mode_;
       last_button_pressed_ms_ = millis();

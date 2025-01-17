@@ -182,7 +182,7 @@ void loop()
   if (inverted_pendulum) {
     int cmd_val;  // for motor 1
     if (abs(accel_z) < 7.0) {
-      cmd_val = accel_z * 250 - gyro_y * 250;
+      cmd_val = -accel_z * 200 + gyro_y * 200;
       if (-50 < cmd_val && cmd_val < 50) {
         cmd_val > 0 ? cmd_val = 50 : cmd_val = -50;
       }
@@ -191,7 +191,7 @@ void loop()
     }
 
     int abs_cmd_val = abs(cmd_val);
-    if (cmd_val < 0) {
+    if (cmd_val > 0) {
       motor_[0].ccw_rotate_motor(abs_cmd_val);
       motor_[1].stop_motor();
       motor_[2].cw_rotate_motor(abs_cmd_val);
@@ -231,7 +231,6 @@ void loop()
 
   printEvent(&angVelocityData);
   printEvent(&accelerometerData);
-  //Serial.println(accel_z);
 
   uint8_t system, gyro, accel, mag = 0;
   bno.getCalibration(&system, &gyro, &accel, &mag);

@@ -21,8 +21,6 @@ Adafruit_BNO055 bno = Adafruit_BNO055(55, 0x28, &Wire);
 BluetoothSerial SerialBT;
 
 unsigned long previous_ms = 0;
-unsigned long last_button_pressed_ms = 0;
-bool inverted_pendulum = false;
 
 void setup()
 {
@@ -89,17 +87,11 @@ void loop()
   bno.getCalibration(&system, &gyro, &accel, &mag);
 
   // control
-  if (util.is_builtin_button_pressed() && last_button_pressed_ms + 1000 < millis()) {
-    inverted_pendulum = !inverted_pendulum;
-    last_button_pressed_ms = millis();
-  }
-  if (inverted_pendulum) {
+  body_control.control_mode_change();
+  if (body_control.is_inverted_pendulum_mode()) {
     body_control.inverted_pendulum_control(accel_z, gyro_y);
   } else {
     body_control.remote_control(recv_data);
   }
-
-  for (int i = 0; i < MOTOR_NUM; i++) {
-    motor_[i].clear_encoder_value();
-  }
+  body_control.clear_encoder_value();
 }

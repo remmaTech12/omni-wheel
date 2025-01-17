@@ -1,5 +1,6 @@
 #pragma once
 #include "motor.hpp"
+#include "util.hpp"
 #include "Arduino.h"
 
 class BodyControl {
@@ -52,9 +53,28 @@ class BodyControl {
     }
   }
 
+  void clear_encoder_value() {
+    for (int i = 0; i < motor_num_; i++) {
+      motor_[i].clear_encoder_value();
+    }
+  }
+
+  void control_mode_change() {
+    if (util_.is_builtin_button_pressed() && last_button_pressed_ms_ + 1000 < millis()) {
+      is_inverted_pendulum_mode_ = !is_inverted_pendulum_mode_;
+      last_button_pressed_ms_ = millis();
+    }
+  }
+
+  bool is_inverted_pendulum_mode() { return is_inverted_pendulum_mode_; }
+
  private:
   Motor* motor_;
+  Util util_;
+
   int motor_num_;
+  bool is_inverted_pendulum_mode_ = false;
+  unsigned long last_button_pressed_ms_ = 0;
 
   void upper_motion() {
     motor_[0].ccw_rotate_motor(255);

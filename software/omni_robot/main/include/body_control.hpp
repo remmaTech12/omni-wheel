@@ -15,10 +15,7 @@ class BodyControl {
   void inverted_pendulum_control(const double accel_z, const double gyro_y) {
     int cmd_val;  // for motor 1
     if (abs(accel_z) < 7.0) {
-      cmd_val = -accel_z * 200 + gyro_y * 200;
-      if (-50 < cmd_val && cmd_val < 50) {
-        cmd_val > 0 ? cmd_val = 50 : cmd_val = -50;
-      }
+      cmd_val = -accel_z * 500 + gyro_y * 500;
     } else {
       cmd_val = 0.0;
     }

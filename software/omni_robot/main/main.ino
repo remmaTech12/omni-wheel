@@ -17,14 +17,12 @@ Motor motor_[3];
 Util util;
 BodyControl body_control;
 
-unsigned long previous_ms = 0;
-
-bool inverted_pendulum = false;
-double accel_z = 0;
-double gyro_y = 0;
-
 Adafruit_BNO055 bno = Adafruit_BNO055(55, 0x28, &Wire);
 BluetoothSerial SerialBT;
+
+unsigned long previous_ms = 0;
+unsigned long last_button_pressed_ms = 0;
+bool inverted_pendulum = false;
 
 void setup()
 {
@@ -92,15 +90,16 @@ void loop()
   sensors_event_t angVelocityData, accelerometerData;
   bno.getEvent(&angVelocityData, Adafruit_BNO055::VECTOR_GYROSCOPE);
   bno.getEvent(&accelerometerData, Adafruit_BNO055::VECTOR_ACCELEROMETER);
-  gyro_y = angVelocityData.gyro.y;
-  accel_z = accelerometerData.acceleration.z;
+  double accel_z = accelerometerData.acceleration.z;
+  double gyro_y = angVelocityData.gyro.y;
   // util.printEvent(&angVelocityData);
 
   uint8_t system, gyro, accel, mag = 0;
   bno.getCalibration(&system, &gyro, &accel, &mag);
 
-  if (digitalRead(SW_PIN) == HIGH) {
-    inverted_pendulum = true;
+  if (digitalRead(SW_PIN) == HIGH && last_button_pressed_ms + 1000 < millis()) {
+    inverted_pendulum = !inverted_pendulum;
+    last_button_pressed_ms = millis();
   }
   if (inverted_pendulum) {
     body_control.inverted_pendulum_control(accel_z, gyro_y);

@@ -34,6 +34,10 @@ unsigned long previous_ms = 0;
 double i_err = 0;
 double pre_err = 0;
 
+bool inverted_pendulum = false;
+double accel_z = 0;
+double gyro_y = 0;
+
 Adafruit_BNO055 bno = Adafruit_BNO055(55, 0x28, &Wire);
 
 BluetoothSerial SerialBT;
@@ -86,57 +90,59 @@ void output_time()
 void printEvent(sensors_event_t* event) {
   double x = -1000000, y = -1000000 , z = -1000000; //dumb values, easy to spot problem
   if (event->type == SENSOR_TYPE_ACCELEROMETER) {
-    Serial.print("Accl:");
+    // Serial.print("Accl:");
     x = event->acceleration.x;
     y = event->acceleration.y;
     z = event->acceleration.z;
+    accel_z = z;
   }
   else if (event->type == SENSOR_TYPE_ORIENTATION) {
-    Serial.print("Orient:");
+    // Serial.print("Orient:");
     x = event->orientation.x;
     y = event->orientation.y;
     z = event->orientation.z;
   }
   else if (event->type == SENSOR_TYPE_MAGNETIC_FIELD) {
-    Serial.print("Mag:");
+    // Serial.print("Mag:");
     x = event->magnetic.x;
     y = event->magnetic.y;
     z = event->magnetic.z;
   }
   else if (event->type == SENSOR_TYPE_GYROSCOPE) {
-    Serial.print("Gyro:");
+    // Serial.print("Gyro:");
     x = event->gyro.x;
     y = event->gyro.y;
     z = event->gyro.z;
+    gyro_y = y;
   }
   else if (event->type == SENSOR_TYPE_ROTATION_VECTOR) {
-    Serial.print("Rot:");
+    // Serial.print("Rot:");
     x = event->gyro.x;
     y = event->gyro.y;
     z = event->gyro.z;
   }
   else if (event->type == SENSOR_TYPE_LINEAR_ACCELERATION) {
-    Serial.print("Linear:");
+    // Serial.print("Linear:");
     x = event->acceleration.x;
     y = event->acceleration.y;
     z = event->acceleration.z;
   }
   else if (event->type == SENSOR_TYPE_GRAVITY) {
-    Serial.print("Gravity:");
+    // Serial.print("Gravity:");
     x = event->acceleration.x;
     y = event->acceleration.y;
     z = event->acceleration.z;
   }
   else {
-    Serial.print("Unk:");
+    // Serial.print("Unk:");
   }
 
-  Serial.print("\tx= ");
-  Serial.print(x);
-  Serial.print(" |\ty= ");
-  Serial.print(y);
-  Serial.print(" |\tz= ");
-  Serial.println(z);
+  // Serial.print("\tx= ");
+  // Serial.print(x);
+  // Serial.print(" |\ty= ");
+  // Serial.println(y);
+  // Serial.print(" |\tz= ");
+  // Serial.println(z);
 }
 
 void loop()
@@ -171,16 +177,28 @@ void loop()
   }
 
   if (digitalRead(SW_PIN) == HIGH) {
-    for (int i = 0; i < MOTOR_NUM; i++) {
-      const int target_rpm = 100;
-      motor_[i].calculate_rpm(interval_ms);
-      const int cmd_val =
-          pid_[i].calculate_pid(target_rpm, motor_[i].get_rpm(), interval_ms);
-      motor_[i].cw_rotate_motor(cmd_val);
+    inverted_pendulum = true;
+  }
+  if (inverted_pendulum) {
+    int cmd_val;  // for motor 1
+    if (abs(accel_z) < 7.0) {
+      cmd_val = accel_z * 250 - gyro_y * 250;
+      if (-50 < cmd_val && cmd_val < 50) {
+        cmd_val > 0 ? cmd_val = 50 : cmd_val = -50;
+      }
+    } else {
+      cmd_val = 0.0;
     }
-  } else {
-    for (int i = 0; i < MOTOR_NUM; i++) {
-      motor_[i].cw_rotate_motor(0);
+
+    int abs_cmd_val = abs(cmd_val);
+    if (cmd_val < 0) {
+      motor_[0].ccw_rotate_motor(abs_cmd_val);
+      motor_[1].stop_motor();
+      motor_[2].cw_rotate_motor(abs_cmd_val);
+    } else {
+      motor_[0].cw_rotate_motor(abs_cmd_val);
+      motor_[1].stop_motor();
+      motor_[2].ccw_rotate_motor(abs_cmd_val);
     }
   }
 
@@ -213,6 +231,7 @@ void loop()
 
   printEvent(&angVelocityData);
   printEvent(&accelerometerData);
+  //Serial.println(accel_z);
 
   uint8_t system, gyro, accel, mag = 0;
   bno.getCalibration(&system, &gyro, &accel, &mag);

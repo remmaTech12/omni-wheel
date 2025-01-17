@@ -59,45 +59,37 @@ void setup()
 
 void loop()
 {
+  // timer
   const unsigned long interval_ms = 50;
   unsigned long current_ms = millis();
   if (current_ms - previous_ms < interval_ms) return;
-
   previous_ms = current_ms;
 
-  bool remote_button_pressed  = false;
-  bool buildin_button_pressed = false;
-
-  uint8_t recv_data[2];
+  // communication
+  uint8_t recv_data[2] = {0x0, 0x0};
   if (SerialBT.available()) {
     SerialBT.readBytes(recv_data, 2);
-    
-    if (recv_data[0] == 'T' && recv_data[1] != 0) {
-      remote_button_pressed = true;
-    }
   }
 
-  if (digitalRead(SW_PIN) == HIGH) {
-    buildin_button_pressed = true;
-  }
-
-  if (remote_button_pressed || buildin_button_pressed) {
-    digitalWrite(LED_PIN, HIGH);
+  // led
+  if (util.is_remote_button_pressed(recv_data) || util.is_builtin_button_pressed()) {
+    util.on_led();
   } else {
-    digitalWrite(LED_PIN, LOW);
+    util.off_led();
   }
 
+  // imu
   sensors_event_t angVelocityData, accelerometerData;
   bno.getEvent(&angVelocityData, Adafruit_BNO055::VECTOR_GYROSCOPE);
   bno.getEvent(&accelerometerData, Adafruit_BNO055::VECTOR_ACCELEROMETER);
   double accel_z = accelerometerData.acceleration.z;
   double gyro_y = angVelocityData.gyro.y;
   // util.printEvent(&angVelocityData);
-
   uint8_t system, gyro, accel, mag = 0;
   bno.getCalibration(&system, &gyro, &accel, &mag);
 
-  if (digitalRead(SW_PIN) == HIGH && last_button_pressed_ms + 1000 < millis()) {
+  // control
+  if (util.is_builtin_button_pressed() && last_button_pressed_ms + 1000 < millis()) {
     inverted_pendulum = !inverted_pendulum;
     last_button_pressed_ms = millis();
   }

@@ -72,5 +72,12 @@ class Util {
       Serial.println(z);
     }
 
+    bool is_builtin_button_pressed() { return digitalRead(SW_PIN) == HIGH; }
+    bool is_remote_button_pressed(uint8_t* recv_data) {
+      return recv_data[0] == 'T' && recv_data[1] != 0;
+    }
+    void on_led() { digitalWrite(LED_PIN, HIGH); }
+    void off_led() { digitalWrite(LED_PIN, LOW); }
+
    private:
 };

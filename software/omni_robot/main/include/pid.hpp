@@ -15,12 +15,21 @@ class PID {
     {
       max_i_err_ = max;
     }
-    double calculate_pid(double target, double current, double interval_ms)
+    double calculate_pid_command(double target, double current, double interval_ms)
     {
       const int err = target - abs(current);
       i_err_ += (double) err * interval_ms / 1000.0;
       i_err_ = constrain(i_err_, -max_i_err_, max_i_err_);
       const int cmd_val = constrain(p_gain_ * err + i_gain_ * i_err_, 0, 255);
+
+      return cmd_val;
+    }
+    double calculate_pid(double target, double current, double interval_ms)
+    {
+      const double err = target - current;
+      i_err_ += (double) err * interval_ms / 1000.0;
+      i_err_ = constrain(i_err_, -max_i_err_, max_i_err_);
+      const int cmd_val = constrain(p_gain_ * err + i_gain_ * i_err_, -255, 255);
 
       return cmd_val;
     }

@@ -1,5 +1,6 @@
 #pragma once
 #include "motor.hpp"
+#include "pid.hpp"
 #include "util.hpp"
 #include "Arduino.h"
 
@@ -13,9 +14,17 @@ class BodyControl {
   }
 
   void inverted_pendulum_control(const double accel_z, const double gyro_y) {
-    int cmd_val;  // for motor 1
+    int cmd_val = 0;  // for motor 1
     if (abs(accel_z) < 7.0) {
-      cmd_val = -accel_z * 500 + gyro_y * 500;
+      PID pid_acc, pid_gyro;
+      pid_acc.set_gain(200.0, 500.0, 0.0);
+      pid_acc.set_max_i_err(255.0);
+      pid_gyro.set_gain(1000.0, 100.0, 0.0);
+      pid_gyro.set_max_i_err(150.0);
+
+      cmd_val += pid_acc.calculate_pid(0.0, accel_z, 50);
+      cmd_val -= pid_gyro.calculate_pid(0.0, gyro_y, 50);
+      // cmd_val = -accel_z * 500 + gyro_y * 500;
     } else {
       cmd_val = 0.0;
     }

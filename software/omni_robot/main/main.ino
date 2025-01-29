@@ -33,22 +33,22 @@ void setup()
   motor[2].setup(2, MOTOR3_ENC_A_PIN, MOTOR3_ENC_B_PIN, MOTOR3_IN1_PIN, MOTOR3_IN2_PIN);
   body_control.setup(motor, MOTOR_NUM);
 
-  // other pins
-  pinMode(LED_PIN, OUTPUT);
-  pinMode(SW_PIN, INPUT);
-
   // initialize bno055
+  /*
   if (!bno.begin())
   {
     Serial.print("Ooops, no BNO055 detected ... Check your wiring or I2C ADDR!");
     while (1);
   }
+  */
 
   // bluetooth
   SerialBT.begin("ESP32_omni_robot");  // Bluetooth device name
   Serial.println("The device started, now you can pair it with bluetooth!");
 
   // notification
+  pinMode(LED_PIN, OUTPUT);
+  pinMode(SW_PIN, INPUT);
   util.blink_led();
 
   delay(300);
